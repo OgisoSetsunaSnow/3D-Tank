@@ -1,0 +1,53 @@
+﻿/* SIE CONFIDENTIAL
+PlayStation(R)4 Programmer Tool Runtime Library Release 09.008.001
+* Copyright (C) 2013 Sony Interactive Entertainment Inc.
+*/
+
+#include "std_cbuffer.h"
+#include "instance_buffer.h"
+#include "vsoutput.hs"
+
+struct VS_INPUT
+{
+	float3 Position		: POSITION0;
+	float3 Color		: COLOR0;
+	float2 UV			: TEXCOORD0;
+};
+
+VS_OUTPUT main( VS_INPUT Input, uint InstanceId : S_INSTANCE_ID, uint VertexId : S_VERTEX_ID)
+{
+	VS_OUTPUT Output;
+
+	float quadHalfWidth = 0.5f;
+	float4 clipPos = float4(0,0,0,1);
+	float4 quadVtxClipPos[4] = 
+	{
+		float4(-quadHalfWidth,-quadHalfWidth,0,1),
+		float4(quadHalfWidth,-quadHalfWidth,0,1),
+		float4(-quadHalfWidth,quadHalfWidth,0,1),
+		float4(quadHalfWidth,quadHalfWidth,0,1)
+	};
+
+	float2 quadUV = float2(0,0); 
+	float2 quadUVs[4] = 
+	{
+		float2(0,1),
+		float2(1,1),
+		float2(0,0),
+		float2(1,0)
+	};
+	
+	if(VertexId < 4)
+	{
+		clipPos = quadVtxClipPos[VertexId];
+		quadUV = quadUVs[VertexId];
+	}
+
+	Output.Position = TranformPoint(instanceData2D[InstanceId].xform, clipPos);
+	Output.Color = instanceData2D[InstanceId].color.xyz;
+
+	float4 uv_offset_scale = instanceData2D[InstanceId].uv_offset_scale;
+	Output.UV = quadUV * uv_offset_scale.zw + uv_offset_scale.xy;
+
+	return Output;
+}

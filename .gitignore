@@ -1,0 +1,40 @@
+/.vs/
+/.vscode/
+/Debug_ORBIS_framework/
+/Obj/
+/framework/sce_module/
+/framework/render/PS4/api_gnm/sce_module/
+/framework/render/PS4/api_gnm/toolkit/*.a
+
+*.sb
+*.user
+*.elf
+*.pdb
+
+shader_p.h
+shader_vv.h
+/framework/render/PS4/api_gnm/toolkit/shader_common/cs_*.h
+/framework/render/PS4/api_gnm/toolkit/shader_common/pix_*.h
+/framework/render/PS4/api_gnm/toolkit/shader_common/copytexture2d_p.h
+/framework/render/PS4/api_gnm/toolkit/shader_common/vex_clear_vv.h
+/framework/framework_debug.exe
+/framework/framework.exe
+/Build
+# ---------------------------------------------------------------------------
+# macOS / Xcode build outputs
+# ---------------------------------------------------------------------------
+/framework/build_xcode/build/
+/framework/build_xcode/DerivedData/
+/framework/build_xcode/*.xcuserstate
+/framework/build_xcode/framework.xcodeproj/xcuserdata/
+/framework/build_xcode/framework.xcodeproj/project.xcworkspace/xcuserdata/
+/framework/build_xcode/CMakeFiles/
+/framework/build_xcode/CMakeScripts/
+/framework/build_xcode/CMakeCache.txt
+/framework/build_xcode/CMakeDoxyfile.in
+/framework/build_xcode/cmake_install.cmake
+/framework/build_xcode/XCBuildData/
+*.xcuserstate
+
+# macOS metadata
+.DS_Store

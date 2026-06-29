@@ -1,0 +1,27 @@
+﻿/* SIE CONFIDENTIAL
+PlayStation(R)4 Programmer Tool Runtime Library Release 09.008.001
+* Copyright (C) 2013 Sony Interactive Entertainment Inc.
+*/
+
+#include "std_cbuffer.h"
+#include "instance_buffer.h"
+#include "vsoutput.hs"
+
+struct VS_INPUT
+{
+	float3 Position		: POSITION0;
+	float3 Color		: COLOR0;
+	float2 UV			: TEXCOORD0;
+};
+
+VS_OUTPUT main( VS_INPUT Input, uint InstanceId : S_INSTANCE_ID )
+{
+	VS_OUTPUT Output;
+	
+	Output.Position = TranformPoint(instanceData3D[InstanceId].xform, TranformPoint(m_WorldViewProj, float4(Input.Position.xyz, 1)));
+	float4 uv_offset_scale = instanceData3D[InstanceId].uv_offset_scale;
+	Output.UV = Input.UV * uv_offset_scale.zw + uv_offset_scale.xy;
+	Output.Color = instanceData3D[InstanceId].color.xyz;
+	
+	return Output;
+}

@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Framework">
+      <UniqueIdentifier>{951493bd-02ba-44c1-85c2-6b2efb14f565}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\assets">
+      <UniqueIdentifier>{97b4155e-9be2-4ee4-bf10-5c0cfebabf5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\include">
+      <UniqueIdentifier>{99eb2b21-1ce5-4dce-a637-96f9f22b4e9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\memory">
+      <UniqueIdentifier>{bcc01cb8-a275-4a26-ba6e-5aa4166efe05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rdlib">
+      <UniqueIdentifier>{6b12bf74-2179-49e7-8028-818d1d0b3b86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rdlib\imgui">
+      <UniqueIdentifier>{e487f334-c073-4b44-a3c2-8524f20ea6d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rdlib\doctest">
+      <UniqueIdentifier>{41bf7f78-6020-46bc-8e5f-56403d893c68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\gameframwork">
+      <UniqueIdentifier>{e7e6e4ad-e65d-49d9-8ab7-bc401d9e96f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\gameframwork\render">
+      <UniqueIdentifier>{6dae5a79-b4dc-44af-90b1-5e69056510c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\gameframwork\render\PC">
+      <UniqueIdentifier>{0e2dbad0-a866-4041-9e13-419b9cb353fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\gameframwork\audio">
+      <UniqueIdentifier>{68c7d32a-990c-404f-a99f-e78604c2e520}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\gameframwork\audio\PC">
+      <UniqueIdentifier>{b40b41b4-8354-4a70-96d6-1637123bc419}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\game">
+      <UniqueIdentifier>{356bcf1d-0bc6-4a95-9dc2-2571d1e864e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\gameframwork\assets">
+      <UniqueIdentifier>{684c9944-dd74-4591-96cc-ff86c4521035}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\gameframwork\timer">
+      <UniqueIdentifier>{53d3cd0b-e166-4be4-93bd-bc077edd8880}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\gameframwork\editor">
+      <UniqueIdentifier>{f32622cf-af83-40e6-b129-c80f52b0caa0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\game\component">
+      <UniqueIdentifier>{d40c1f84-7b38-45c0-bdb8-c4f1a36319d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\game\entity">
+      <UniqueIdentifier>{e8b6272a-e574-469c-a62a-9302f2767be7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\gameframwork\log">
+      <UniqueIdentifier>{2f205ed7-15d2-4e7c-b446-45cd8d030864}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\gameframwork\render\MAC">
+      <UniqueIdentifier>{98537381-3056-4a90-aac1-89ba512765fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\gameframwork\manager">
+      <UniqueIdentifier>{c941a8b5-cfe6-4705-b14d-b9e9b764cfaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\game\StateMachine">
+      <UniqueIdentifier>{81c1a8fc-9c19-4ecb-a245-5f464be771a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\game\StateNode">
+      <UniqueIdentifier>{5487a188-ffb5-422a-b506-9a84377caef2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\gameframwork\physics">
+      <UniqueIdentifier>{28abf280-d9ce-44ce-8ac9-32dd913abe4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\game\timer">
+      <UniqueIdentifier>{08378458-2fb0-4570-9f09-efbd4d1bf802}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rdlib\json">
+      <UniqueIdentifier>{2a397c51-1fdc-4fc1-8824-1f1da4a3c6c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\game\level">
+      <UniqueIdentifier>{13112913-715b-4f67-b86b-5215b13dbff4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\game\data">
+      <UniqueIdentifier>{d4a96613-c634-4729-834c-080c941ea2cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\game\UI">
+      <UniqueIdentifier>{7001fa06-c2ef-4136-9440-c3a7b7cb5ec5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\gameframwork\input">
+      <UniqueIdentifier>{05abfb1c-d303-4366-b83a-b98ffe81364d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\gameframwork\ui">
+      <UniqueIdentifier>{3bd72d79-0a73-4c6b-931d-1a40e6bc2d0d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\PS4\main_ps4.cpp" />
+    <ClCompile Include="src\PC\main_PC.cpp" />
+    <ClCompile Include="render\PC\ImageIO.cpp">
+      <Filter>Framework\gameframwork\render\PC</Filter>
+    </ClCompile>
+    <ClCompile Include="render\PC\RenderPC.cpp">
+      <Filter>Framework\gameframwork\render\PC</Filter>
+    </ClCompile>
+    <ClCompile Include="render\PC\RenderResourcePC.cpp">
+      <Filter>Framework\gameframwork\render\PC</Filter>
+    </ClCompile>
+    <ClCompile Include="render\PC\Utility.cpp">
+      <Filter>Framework\gameframwork\render\PC</Filter>
+    </ClCompile>
+    <ClCompile Include="render\PC\Window.cpp">
+      <Filter>Framework\gameframwork\render\PC</Filter>
+    </ClCompile>
+    <ClCompile Include="audio\AudioResourceWave.cpp">
+      <Filter>Framework\gameframwork\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="audio\PC\AudioPC.cpp">
+      <Filter>Framework\gameframwork\audio\PC</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PS4\memory_PS4.cpp" />
+    <ClCompile Include="render\BMfont.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdlib\imgui\imgui.cpp">
+      <Filter>3rdlib\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdlib\imgui\imgui_demo.cpp">
+      <Filter>3rdlib\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdlib\imgui\imgui_draw.cpp">
+      <Filter>3rdlib\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdlib\imgui\imgui_impl_dx12.cpp">
+      <Filter>3rdlib\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdlib\imgui\imgui_impl_win32.cpp">
+      <Filter>3rdlib\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdlib\imgui\imgui_tables.cpp">
+      <Filter>3rdlib\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdlib\imgui\imgui_widgets.cpp">
+      <Filter>3rdlib\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="gameframework\editor\FpsCounter.cpp">
+      <Filter>Framework\gameframwork\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="gameframework\GameFramework.cpp">
+      <Filter>Framework\gameframwork</Filter>
+    </ClCompile>
+    <ClCompile Include="gameframework\editor\FpsCounter.cpp">
+      <Filter>Framework\gameframwork\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="game\TankGame.cpp">
+      <Filter>Framework\game</Filter>
+    </ClCompile>
+    <ClCompile Include="game\entity\Actor.cpp">
+      <Filter>Framework\game\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="game\entity\TankActor.cpp">
+      <Filter>Framework\game\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="game\component\StaticMeshComponent.cpp">
+      <Filter>Framework\game\component</Filter>
+    </ClCompile>
+    <ClCompile Include="game\component\Transform.cpp">
+      <Filter>Framework\game\component</Filter>
+    </ClCompile>
+    <ClCompile Include="game\component\Camera.cpp">
+      <Filter>Framework\game\component</Filter>
+    </ClCompile>
+    <ClCompile Include="gameframework\log\LogSystemImGuiView.cpp">
+      <Filter>Framework\gameframwork\log</Filter>
+    </ClCompile>
+    <ClCompile Include="gameframework\log\LogSystem.cpp">
+      <Filter>Framework\gameframwork\log</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Mac\main_mac.cpp" />
+    <ClCompile Include="render\RenderMeshResource.cpp">
+      <Filter>Framework\gameframwork\render\MAC</Filter>
+    </ClCompile>
+    <ClCompile Include="render\RenderTextureResource.cpp">
+      <Filter>Framework\gameframwork\render\MAC</Filter>
+    </ClCompile>
+    <ClCompile Include="render\tga.cpp">
+      <Filter>Framework\gameframwork\render\MAC</Filter>
+    </ClCompile>
+    <ClCompile Include="render\tiny_obj_loader.cpp">
+      <Filter>Framework\gameframwork\render\MAC</Filter>
+    </ClCompile>
+    <ClCompile Include="gameframework\IManager.h">
+      <Filter>Framework\gameframwork</Filter>
+    </ClCompile>
+    <ClCompile Include="gameframework\manager\RendererManager.cpp">
+      <Filter>Framework\gameframwork\manager</Filter>
+    </ClCompile>
+    <ClCompile Include="gameframework\manager\AudioManager.cpp">
+      <Filter>Framework\gameframwork\manager</Filter>
+    </ClCompile>
+    <ClCompile Include="gameframework\assets\AssetCommon.cpp">
+      <Filter>Framework\gameframwork\assets</Filter>
+    </ClCompile>
+    <ClCompile Include="game\World.cpp">
+      <Filter>Framework\game</Filter>
+    </ClCompile>
+    <ClCompile Include="gameframework\manager\InputSystemManager.cpp">
+      <Filter>Framework\gameframwork\manager</Filter>
+    </ClCompile>
+    <ClCompile Include="game\entity\GroundActor.cpp">
+      <Filter>Framework\game\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="game\entity\SkyBoxActor.cpp">
+      <Filter>Framework\game\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="game\component\SkyComponent.cpp">
+      <Filter>Framework\game\component</Filter>
+    </ClCompile>
+    <ClCompile Include="game\component\SpringArmComponent.cpp">
+      <Filter>Framework\game\component</Filter>
+    </ClCompile>
+    <ClCompile Include="gameframework\physics\AABB.cpp">
+      <Filter>Framework\gameframwork\physics</Filter>
+    </ClCompile>
+    <ClCompile Include="game\PhysicsWorld.cpp">
+      <Filter>Framework\game</Filter>
+    </ClCompile>
+    <ClCompile Include="game\component\CollisionComponent.cpp">
+      <Filter>Framework\game\component</Filter>
+    </ClCompile>
+    <ClCompile Include="game\entity\GunBarreActor.cpp">
+      <Filter>Framework\game\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="game\entity\TrankTrackL.cpp">
+      <Filter>Framework\game\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="game\entity\TrankTrackR.cpp">
+      <Filter>Framework\game\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="game\component\CharacterControllerComponent.cpp">
+      <Filter>Framework\game\component</Filter>
+    </ClCompile>
+    <ClCompile Include="game\entity\WallActor.cpp">
+      <Filter>Framework\game\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="game\entity\PlayerTankActor.cpp">
+      <Filter>Framework\game\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="game\entity\EnemyTankActor.cpp">
+      <Filter>Framework\game\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="game\StateNode\PlayerTankStates.cpp">
+      <Filter>Framework\game\StateNode</Filter>
+    </ClCompile>
+    <ClCompile Include="game\timer\GameTimerManager.cpp">
+      <Filter>Framework\game\timer</Filter>
+    </ClCompile>
+    <ClCompile Include="game\StateNode\EnemyTankStates.cpp">
+      <Filter>Framework\game\StateNode</Filter>
+    </ClCompile>
+    <ClCompile Include="game\UI\PlayerHUDView.cpp">
+      <Filter>Framework\game\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="gameframework\manager\ResourceManager.cpp">
+      <Filter>Framework\gameframwork\manager</Filter>
+    </ClCompile>
+    <ClCompile Include="gameframework\InputManager\InputManager.cpp">
+      <Filter>Framework\gameframwork\input</Filter>
+    </ClCompile>
+    <ClCompile Include="gameframework\InputManager\InputManagerAdapter.cpp">
+      <Filter>Framework\gameframwork\input</Filter>
+    </ClCompile>
+    <ClCompile Include="gameframework\InputManager\InputMapper.cpp">
+      <Filter>Framework\gameframwork\input</Filter>
+    </ClCompile>
+    <ClCompile Include="game\entity\BulletActor.cpp">
+      <Filter>Framework\game\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="gameframework\log\ImGuiManager.cpp">
+      <Filter>Framework\gameframwork\log</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="render\PC\d3dx12.h">
+      <Filter>Framework\gameframwork\render\PC</Filter>
+    </ClInclude>
+    <ClInclude Include="render\PC\ImageIO.h">
+      <Filter>Framework\gameframwork\render\PC</Filter>
+    </ClInclude>
+    <ClInclude Include="render\PC\RenderPC.h">
+      <Filter>Framework\gameframwork\render\PC</Filter>
+    </ClInclude>
+    <ClInclude Include="render\PC\RenderPCNative.h">
+      <Filter>Framework\gameframwork\render\PC</Filter>
+    </ClInclude>
+    <ClInclude Include="render\PC\RenderResourcePC.h">
+      <Filter>Framework\gameframwork\render\PC</Filter>
+    </ClInclude>
+    <ClInclude Include="render\PC\Utility.h">
+      <Filter>Framework\gameframwork\render\PC</Filter>
+    </ClInclude>
+    <ClInclude Include="render\PC\Window.h">
+      <Filter>Framework\gameframwork\render\PC</Filter>
+    </ClInclude>
+    <ClInclude Include="assets\pc_shader\Shaders.h">
+      <Filter>Framework\assets</Filter>
+    </ClInclude>
+    <ClInclude Include="audio\AudioResourceWave.h">
+      <Filter>Framework\gameframwork\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="audio\AudioInterface.h">
+      <Filter>Framework\gameframwork\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="audio\PC\AudioPC.h">
+      <Filter>Framework\gameframwork\audio\PC</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Platform.h">
+      <Filter>Framework\include</Filter>
+    </ClInclude>
+    <ClInclude Include="render\BMfont.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="assets\embedded\RubyTexture.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rdlib\imgui\imconfig.h">
+      <Filter>3rdlib\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rdlib\imgui\imgui.h">
+      <Filter>3rdlib\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rdlib\imgui\imgui_impl_dx12.h">
+      <Filter>3rdlib\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rdlib\imgui\imgui_impl_win32.h">
+      <Filter>3rdlib\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rdlib\imgui\imgui_internal.h">
+      <Filter>3rdlib\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rdlib\imgui\imstb_rectpack.h">
+      <Filter>3rdlib\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rdlib\imgui\imstb_textedit.h">
+      <Filter>3rdlib\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rdlib\imgui\imstb_truetype.h">
+      <Filter>3rdlib\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rdlib\doctest\doctest.h">
+      <Filter>3rdlib\doctest</Filter>
+    </ClInclude>
+    <ClInclude Include="gameframework\editor\FpsCounter.h">
+      <Filter>Framework\gameframwork\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="game\IGame.h">
+      <Filter>Framework\game</Filter>
+    </ClInclude>
+    <ClInclude Include="gameframework\timer\timer.h">
+      <Filter>Framework\gameframwork\timer</Filter>
+    </ClInclude>
+    <ClInclude Include="game\TankGame.h">
+      <Filter>Framework\game</Filter>
+    </ClInclude>
+    <ClInclude Include="gameframework\editor\FpsCounter.h">
+      <Filter>Framework\gameframwork\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="game\TankGame.h">
+      <Filter>Framework\game</Filter>
+    </ClInclude>
+    <ClInclude Include="gameframework\GameFramework.h">
+      <Filter>Framework\gameframwork</Filter>
+    </ClInclude>
+    <ClInclude Include="game\entity\Actor.h">
+      <Filter>Framework\game\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="game\entity\TankActor.h">
+      <Filter>Framework\game\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="game\component\Camera.h">
+      <Filter>Framework\game\component</Filter>
+    </ClInclude>
+    <ClInclude Include="game\component\Component.h">
+      <Filter>Framework\game\component</Filter>
+    </ClInclude>
+    <ClInclude Include="game\component\StaticMeshComponent.h">
+      <Filter>Framework\game\component</Filter>
+    </ClInclude>
+    <ClInclude Include="game\component\Transform.h">
+      <Filter>Framework\game\component</Filter>
+    </ClInclude>
+    <ClInclude Include="gameframework\log\LogSystemImGuiView.h">
+      <Filter>Framework\gameframwork\log</Filter>
+    </ClInclude>
+    <ClInclude Include="gameframework\log\LogSystem.h">
+      <Filter>Framework\gameframwork\log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rdlib\imgui\imgui_impl_metal.h">
+      <Filter>3rdlib\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rdlib\imgui\imgui_impl_osx.h">
+      <Filter>3rdlib\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="render\RenderInterface.h">
+      <Filter>Framework\gameframwork\render\MAC</Filter>
+    </ClInclude>
+    <ClInclude Include="render\Mac\RenderMac.h">
+      <Filter>Framework\gameframwork\render\MAC</Filter>
+    </ClInclude>
+    <ClInclude Include="render\tga.h">
+      <Filter>Framework\gameframwork\render\MAC</Filter>
+    </ClInclude>
+    <ClInclude Include="render\tiny_obj_loader.h">
+      <Filter>Framework\gameframwork\render\MAC</Filter>
+    </ClInclude>
+    <ClInclude Include="render\Mac\WindowMac.h">
+      <Filter>Framework\gameframwork\render\MAC</Filter>
+    </ClInclude>
+    <ClInclude Include="gameframework\manager\RendererManager.h">
+      <Filter>Framework\gameframwork\manager</Filter>
+    </ClInclude>
+    <ClInclude Include="gameframework\manager\AudioManager.h">
+      <Filter>Framework\gameframwork\manager</Filter>
+    </ClInclude>
+    <ClInclude Include="gameframework\assets\AssetCommon.h">
+      <Filter>Framework\gameframwork\assets</Filter>
+    </ClInclude>
+    <ClInclude Include="game\World.h">
+      <Filter>Framework\game</Filter>
+    </ClInclude>
+    <ClInclude Include="game\StateMachine\IState.h">
+      <Filter>Framework\game\StateMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="game\StateMachine\StateMachine.h">
+      <Filter>Framework\game\StateMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="gameframework\manager\InputSystemManager.h">
+      <Filter>Framework\gameframwork\manager</Filter>
+    </ClInclude>
+    <ClInclude Include="game\entity\GroundActor.h">
+      <Filter>Framework\game\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="game\entity\SkyBoxActor.h">
+      <Filter>Framework\game\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="game\component\SkyComponent.h">
+      <Filter>Framework\game\component</Filter>
+    </ClInclude>
+    <ClInclude Include="game\component\SpringArmComponent.h">
+      <Filter>Framework\game\component</Filter>
+    </ClInclude>
+    <ClInclude Include="gameframework\physics\AABB.h">
+      <Filter>Framework\gameframwork\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="game\PhysicsWorld.h">
+      <Filter>Framework\game</Filter>
+    </ClInclude>
+    <ClInclude Include="game\component\CollisionComponent.h">
+      <Filter>Framework\game\component</Filter>
+    </ClInclude>
+    <ClInclude Include="game\entity\GunBarreActor.h">
+      <Filter>Framework\game\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="game\entity\TankTrackL.h">
+      <Filter>Framework\game\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="game\entity\TrankTrackR.h">
+      <Filter>Framework\game\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="game\component\CharacterControllerComponent.h">
+      <Filter>Framework\game\component</Filter>
+    </ClInclude>
+    <ClInclude Include="game\entity\WallActor.h">
+      <Filter>Framework\game\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="gameframework\physics\Ray.h">
+      <Filter>Framework\gameframwork\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="game\entity\PlayerTankActor.h">
+      <Filter>Framework\game\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="game\entity\EnemyTankActor.h">
+      <Filter>Framework\game\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="game\StateNode\PlayerTankStates.h">
+      <Filter>Framework\game\StateNode</Filter>
+    </ClInclude>
+    <ClInclude Include="game\timer\GameTimerManager.h">
+      <Filter>Framework\game\timer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rdlib\json\json.hpp">
+      <Filter>3rdlib\json</Filter>
+    </ClInclude>
+    <ClInclude Include="game\StateNode\EnemyTankStates.h">
+      <Filter>Framework\game\StateNode</Filter>
+    </ClInclude>
+    <ClInclude Include="game\UI\PlayerHUDView.h">
+      <Filter>Framework\game\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="gameframework\manager\ResourceManager.h">
+      <Filter>Framework\gameframwork\manager</Filter>
+    </ClInclude>
+    <ClInclude Include="gameframework\InputManager\IInputSystem.h">
+      <Filter>Framework\gameframwork\input</Filter>
+    </ClInclude>
+    <ClInclude Include="gameframework\InputManager\InputAction.h">
+      <Filter>Framework\gameframwork\input</Filter>
+    </ClInclude>
+    <ClInclude Include="gameframework\InputManager\InputManager.h">
+      <Filter>Framework\gameframwork\input</Filter>
+    </ClInclude>
+    <ClInclude Include="gameframework\InputManager\InputManagerAdapter.h">
+      <Filter>Framework\gameframwork\input</Filter>
+    </ClInclude>
+    <ClInclude Include="gameframework\InputManager\InputMapper.h">
+      <Filter>Framework\gameframwork\input</Filter>
+    </ClInclude>
+    <ClInclude Include="gameframework\InputManager\KeyCodes.h">
+      <Filter>Framework\gameframwork\input</Filter>
+    </ClInclude>
+    <ClInclude Include="game\entity\BulletActor.h">
+      <Filter>Framework\game\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Common.h">
+      <Filter>Framework\include</Filter>
+    </ClInclude>
+    <ClInclude Include="game\Constants.h">
+      <Filter>Framework\include</Filter>
+    </ClInclude>
+    <ClInclude Include="gameframework\ui\UiScreen.h">
+      <Filter>Framework\gameframwork\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="gameframework\log\ImGuiManager.h">
+      <Filter>Framework\gameframwork\log</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\3rdlib\imgui\imgui_impl_metal.mm">
+      <Filter>3rdlib\imgui</Filter>
+    </None>
+    <None Include="..\3rdlib\imgui\imgui_impl_osx.mm">
+      <Filter>3rdlib\imgui</Filter>
+    </None>
+    <None Include="src\Mac\main_tank.mm" />
+    <None Include="render\Mac\ImageIOMac.mm">
+      <Filter>Framework\gameframwork\render\MAC</Filter>
+    </None>
+    <None Include="render\Mac\RenderMac.mm">
+      <Filter>Framework\gameframwork\render\MAC</Filter>
+    </None>
+    <None Include="render\Mac\RenderResourceMac.mm">
+      <Filter>Framework\gameframwork\render\MAC</Filter>
+    </None>
+    <None Include="render\Mac\WindowMac.mm">
+      <Filter>Framework\gameframwork\render\MAC</Filter>
+    </None>
+    <None Include="game\data\mapData.json">
+      <Filter>Framework\game\data</Filter>
+    </None>
+  </ItemGroup>
+</Project>

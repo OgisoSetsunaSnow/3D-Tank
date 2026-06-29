@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="PC">
+      <UniqueIdentifier>{428745b5-5edb-4d9d-a016-79d791190107}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PC\TEST.cpp">
+      <Filter>PC</Filter>
+    </ClCompile>
+    <ClCompile Include="PC\InputMapperTest.cpp">
+      <Filter>PC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\framework\gameframework\InputManager\InputMapper.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\framework\gameframework\InputManager\InputAction.h" />
+    <ClInclude Include="..\framework\gameframework\InputManager\InputMapper.h" />
+  </ItemGroup>
+</Project>

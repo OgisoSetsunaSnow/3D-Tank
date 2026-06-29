@@ -1,0 +1,1678 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		0D07A66294AC342227A5CE5D /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 6E41443E2319498384D8E9CF /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				7CFFC353AADCCB12A932FB89 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				6D81D4351F2A473A9A9FED76 /* PBXTargetDependency */,
+				402065286A8B481D86DF157C /* PBXTargetDependency */,
+				3B334B5E482646939D67DBC3 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		3F37C274BF035AC1BAD98021 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = FCE97E5B98E5468CA90FC67F /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				FEE5BB5F2A242F9F3FC78FD3 /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		01D9CC87A03C419D8BC5B70C /* TankActor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE529E1E222341BF860C45D7 /* TankActor.cpp */; };
+		0372793ECD914F88822541E7 /* PlayerTankActor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F478F1D71FCC45D093B2C61D /* PlayerTankActor.cpp */; };
+		0442E72EEA314529B526F6F2 /* RenderMeshResource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1CC423AFBCEB4BBB8A5DFA58 /* RenderMeshResource.cpp */; };
+		059D7DDBEEE242A19F689450 /* AudioResourceWave.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E707B3495A93471297C5DFB4 /* AudioResourceWave.cpp */; };
+		164856975B664D5FAE8AFC8F /* ResourceManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8AAE380AC39A46A3B741325D /* ResourceManager.cpp */; };
+		1C4E8FC0DC684CA0ABDC6E18 /* test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 380ED61FA039435B98342B9B /* test.cpp */; };
+		22AA3DFF0C054C2D9DC40954 /* CharacterControllerComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9C0EB4C20FF4231AE907166 /* CharacterControllerComponent.cpp */; };
+		282820B50E7E412B996D3580 /* AssetCommon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99158B07006C4A70A6D6E8D8 /* AssetCommon.cpp */; };
+		2B94C8AB178B4D0187D34C8D /* AudioMac.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1CC710B1F9E34DCDAD1879AB /* AudioMac.mm */; };
+		2CD99CABA0254E49B742AE78 /* World.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EFCF162ACAD8407588E25CF6 /* World.cpp */; };
+		3054D53473F5459FA015011D /* imgui_impl_osx.mm in Sources */ = {isa = PBXBuildFile; fileRef = E20FE017E4824C438181CE2F /* imgui_impl_osx.mm */; };
+		35D2E245540047F28B2D1E9E /* GameTimerManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 521178C477D4407B996B97AE /* GameTimerManager.cpp */; };
+		3807AC15B83844ED8D60F628 /* BulletActor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B431CA5565A84D44B4A4FC3D /* BulletActor.cpp */; };
+		39F717E170544CF39781CD58 /* AABB.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4575F76F59704CEC8C58EB7F /* AABB.cpp */; };
+		3AE84922C6494143846E0C6B /* SkyBoxActor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C20C4742D75A45219D3DF3D0 /* SkyBoxActor.cpp */; };
+		3DEBC1EE267A409F964ABA9D /* Actor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78629A1679BA4FB6A8403258 /* Actor.cpp */; };
+		41FF240B44134DC383C2C871 /* PhysicsWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8AD902A18475471DBD07BFBD /* PhysicsWorld.cpp */; };
+		43E4609D311C49C18B125B60 /* RenderMac.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9356D66C9FDE4517927FDF0D /* RenderMac.mm */; };
+		4560456660294F5DABD2187A /* ImageIOMac.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2448F1AE94F84D9AADB67529 /* ImageIOMac.mm */; };
+		471FF9BB7CB5495AA006A6B8 /* tiny_obj_loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 825A2147739642DA91EA116C /* tiny_obj_loader.cpp */; };
+		47FC49B605C94EA89EE79C07 /* InputSystemManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 212D837542014DEF87F14615 /* InputSystemManager.cpp */; };
+		490AFA717E824CD3B4C07F62 /* LogSystemImGuiView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB0683B2974B452499C533CE /* LogSystemImGuiView.cpp */; };
+		50A09C619462438A8577198A /* InputManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 115FAEF1AEF2442798843D9E /* InputManager.cpp */; };
+		526A1D7404E04581B91BB598 /* LogSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9D8725607EB4630BC42101A /* LogSystem.cpp */; };
+		56A92FE4FAB4451E97548C12 /* RenderResourceMac.mm in Sources */ = {isa = PBXBuildFile; fileRef = 279980821E114FEEAF7CF788 /* RenderResourceMac.mm */; };
+		574F576CA12D4B16AD1774CE /* SpringArmComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDB08F00733A4942B18F5A1E /* SpringArmComponent.cpp */; };
+		58F0A00D3C0B4F93BC9F65C7 /* TrankTrackR.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1712176E4C29426EAAD12CDE /* TrankTrackR.cpp */; };
+		5CFE93B4A6F24526B9ADD2B6 /* Transform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 35611DAF73F04EAFAA803B19 /* Transform.cpp */; };
+		614032C80DF641AEA574A326 /* StaticMeshComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15E0F178F4034559B371C64E /* StaticMeshComponent.cpp */; };
+		614D58076E2E4D808FB8C9C5 /* EnemyTankStates.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53C9DB920ACC4DE58807ECB2 /* EnemyTankStates.cpp */; };
+		615D76A31E49437CA534A158 /* ImGuiManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 351897251AF54CC6AC80BF5B /* ImGuiManager.cpp */; };
+		640D83625C48499DB51E7FD2 /* AudioManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FB1E7AE04754A39B66F63D5 /* AudioManager.cpp */; };
+		682F840DB6EA421FA0894A47 /* TrankTrackL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 051C09DCA1084AC1A5F835B2 /* TrankTrackL.cpp */; };
+		729EAD66F83B45F79206BF87 /* WindowMac.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5E28975EB66E4B5E819159F4 /* WindowMac.mm */; };
+		7FD165C5C165492CB5B8E9E7 /* TankGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11FC3439B59A445FB028E773 /* TankGame.cpp */; };
+		82B7B69A1ADC42C182C89655 /* EnemyTankActor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 02668425E79F406DB418B39E /* EnemyTankActor.cpp */; };
+		8C5C81917CD54E26A225110F /* InputMapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E92CA731598C4CAB96CCC171 /* InputMapper.cpp */; };
+		90AA6DCEC06A41A59FA1AACB /* CollisionComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2D1CD25E69D4E379D046EAA /* CollisionComponent.cpp */; };
+		93AC8B908D734B9BB20C7AC6 /* imgui_impl_metal.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5D6FD93E329647AA8721419F /* imgui_impl_metal.mm */; };
+		941033A0320C470796CF8944 /* MapLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6417061AC73419785E23AB9 /* MapLoader.cpp */; };
+		98908E17BA494FEC859FD0F4 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBB930969A6044D89F2384DB /* Camera.cpp */; };
+		9C4ADA7A08D54DDBBD3C97F0 /* InputManagerAdapter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC111553E0AF4D5E944F52B9 /* InputManagerAdapter.cpp */; };
+		A97EF70950E84335B9808225 /* BMfont.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2FE3CE79141E4C15B6BC40FF /* BMfont.cpp */; };
+		AE407B7CCB2943DB8DA42FCD /* PlayerTankStates.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1A6968048424F94AA63D81A /* PlayerTankStates.cpp */; };
+		AF283A5579EC476BB2FF2147 /* imgui_widgets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 249D974D700F46EA996C80F6 /* imgui_widgets.cpp */; };
+		B365B87D4E764DA89142D2A7 /* FpsCounter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2E7A1479318E4E4FAD2A236A /* FpsCounter.cpp */; };
+		B49B96CBCF644AB8A08D2E08 /* imgui_demo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A54D553F99944E559F5AD5E7 /* imgui_demo.cpp */; };
+		B56E79F0A60F449C9C36E7F1 /* tga.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBC8A635607E4362A1359E50 /* tga.cpp */; };
+		B6F008E615EF4743A5BFF382 /* GameFramework.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C0699E48F304F3CBCD13A3E /* GameFramework.cpp */; };
+		BE678826EC474653A80DFC76 /* WallActor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF7E27D066C244199FBEC15C /* WallActor.cpp */; };
+		C612DA4B7D244CB1A062414C /* imgui_draw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4D7EE3C54C4451B885F5A4F /* imgui_draw.cpp */; };
+		C8BD4A38B42F4E71B6FF6B5A /* imgui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77855BFC26A8446E8A631400 /* imgui.cpp */; };
+		CD0B1255345C4380978ED2EF /* SkyComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1CF447A307AC4D178A4CFCBB /* SkyComponent.cpp */; };
+		D6FC7B19D17F4B57A1BA043F /* imgui_tables.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EFD6BCB28D142249A5D5F3B /* imgui_tables.cpp */; };
+		D8066867DA5E49258BAF7519 /* main_mac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60E4169E01144D92A003C847 /* main_mac.cpp */; };
+		D9CD7A96285A42D5ABB58054 /* GroundActor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E62B9E23389F41DC90629D47 /* GroundActor.cpp */; };
+		DF28A744FCFD4E108E17B61F /* RenderTextureResource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 377E4745990846AFBA9A1C74 /* RenderTextureResource.cpp */; };
+		F06530C1D2B44A81BE78D298 /* RendererManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ED8DC3288054D3184CDDCB4 /* RendererManager.cpp */; };
+		F6B81A9802614873923E2799 /* GunBarreActor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B059A6AECFB43A6B4D96ED1 /* GunBarreActor.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7D40FAED035F42F883D643FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA3AAB9F31C8417CBCA00D1F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F37C274BF035AC1BAD98021;
+			remoteInfo = ZERO_CHECK;
+		};
+		98297A8C2A4D448BAF430E5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA3AAB9F31C8417CBCA00D1F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F37C274BF035AC1BAD98021;
+			remoteInfo = ZERO_CHECK;
+		};
+		AF1BF987D17B4FC7B6E9B443 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA3AAB9F31C8417CBCA00D1F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0161C3D23048D99C09DBCB52;
+			remoteInfo = framework_tests;
+		};
+		EEEE62FB3F00479C90AF3A57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA3AAB9F31C8417CBCA00D1F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F37C274BF035AC1BAD98021;
+			remoteInfo = ZERO_CHECK;
+		};
+		F9F752E2949B4B55A40150E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA3AAB9F31C8417CBCA00D1F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6346CD8CC9D51F1427341A54;
+			remoteInfo = framework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02668425E79F406DB418B39E /* EnemyTankActor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = EnemyTankActor.cpp; path = framework/game/entity/EnemyTankActor.cpp; sourceTree = SOURCE_ROOT; };
+		051C09DCA1084AC1A5F835B2 /* TrankTrackL.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TrankTrackL.cpp; path = framework/game/entity/TrankTrackL.cpp; sourceTree = SOURCE_ROOT; };
+		0603A1FA97E14796ADE4AD3A /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		0AEEC0FDE5EA42C9B8A91A2C /* TankTrackL.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TankTrackL.h; path = framework/game/entity/TankTrackL.h; sourceTree = SOURCE_ROOT; };
+		0E734D5470CD4553BD47B071 /* RendererManager.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = RendererManager.h; path = framework/gameframework/manager/RendererManager.h; sourceTree = SOURCE_ROOT; };
+		0ED8DC3288054D3184CDDCB4 /* RendererManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = RendererManager.cpp; path = framework/gameframework/manager/RendererManager.cpp; sourceTree = SOURCE_ROOT; };
+		0EE6FACD9DBB4955A1156A24 /* LogSystemImGuiView.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = LogSystemImGuiView.h; path = framework/gameframework/log/LogSystemImGuiView.h; sourceTree = SOURCE_ROOT; };
+		109EFAB1A18A4B43AC464A0E /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		10CB3131B158444FB2FD28F7 /* SpringArmComponent.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SpringArmComponent.h; path = framework/game/component/SpringArmComponent.h; sourceTree = SOURCE_ROOT; };
+		115FAEF1AEF2442798843D9E /* InputManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = InputManager.cpp; path = framework/gameframework/InputManager/InputManager.cpp; sourceTree = SOURCE_ROOT; };
+		11FC3439B59A445FB028E773 /* TankGame.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TankGame.cpp; path = framework/game/TankGame.cpp; sourceTree = SOURCE_ROOT; };
+		13AF0468980947C298599DE9 /* CharacterControllerComponent.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CharacterControllerComponent.h; path = framework/game/component/CharacterControllerComponent.h; sourceTree = SOURCE_ROOT; };
+		15E0F178F4034559B371C64E /* StaticMeshComponent.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = StaticMeshComponent.cpp; path = framework/game/component/StaticMeshComponent.cpp; sourceTree = SOURCE_ROOT; };
+		16324B4D38614F68B56FD78B /* StateMachine.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = StateMachine.h; path = framework/game/StateMachine/StateMachine.h; sourceTree = SOURCE_ROOT; };
+		1712176E4C29426EAAD12CDE /* TrankTrackR.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TrankTrackR.cpp; path = framework/game/entity/TrankTrackR.cpp; sourceTree = SOURCE_ROOT; };
+		1923746E33D14BE58EAB957B /* IState.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = IState.h; path = framework/game/StateMachine/IState.h; sourceTree = SOURCE_ROOT; };
+		193FCF27CD8E49E1BE8F5044 /* ImGuiManager.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ImGuiManager.h; path = framework/gameframework/log/ImGuiManager.h; sourceTree = SOURCE_ROOT; };
+		1AD48C4E1DA84AC2B478B063 /* ResourceManager.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ResourceManager.h; path = framework/gameframework/manager/ResourceManager.h; sourceTree = SOURCE_ROOT; };
+		1C820BD23EEC4E6893C4F9A9 /* GroundActor.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = GroundActor.h; path = framework/game/entity/GroundActor.h; sourceTree = SOURCE_ROOT; };
+		1CC423AFBCEB4BBB8A5DFA58 /* RenderMeshResource.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = RenderMeshResource.cpp; path = framework/render/RenderMeshResource.cpp; sourceTree = SOURCE_ROOT; };
+		1CC710B1F9E34DCDAD1879AB /* AudioMac.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = AudioMac.mm; path = framework/audio/Mac/AudioMac.mm; sourceTree = SOURCE_ROOT; };
+		1CF447A307AC4D178A4CFCBB /* SkyComponent.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = SkyComponent.cpp; path = framework/game/component/SkyComponent.cpp; sourceTree = SOURCE_ROOT; };
+		1DFD53019E5A4101BB4C8A6A /* AssetCommon.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = AssetCommon.h; path = framework/gameframework/assets/AssetCommon.h; sourceTree = SOURCE_ROOT; };
+		1EFD6BCB28D142249A5D5F3B /* imgui_tables.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui_tables.cpp; path = 3rdlib/imgui/imgui_tables.cpp; sourceTree = SOURCE_ROOT; };
+		203C79FF463A4ADCB61E9F3C /* .DS_Store */ = {isa = PBXFileReference; explicitFileType = default; fileEncoding = 4; lastKnownFileType = file; name = .DS_Store; path = framework/gameframework/.DS_Store; sourceTree = SOURCE_ROOT; };
+		20AD8B365C6A417ABF2F1957 /* AABB.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = AABB.h; path = framework/gameframework/physics/AABB.h; sourceTree = SOURCE_ROOT; };
+		212D837542014DEF87F14615 /* InputSystemManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = InputSystemManager.cpp; path = framework/gameframework/manager/InputSystemManager.cpp; sourceTree = SOURCE_ROOT; };
+		229434E0564947A192C5EC35 /* BulletActor.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = BulletActor.h; path = framework/game/entity/BulletActor.h; sourceTree = SOURCE_ROOT; };
+		2448F1AE94F84D9AADB67529 /* ImageIOMac.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = ImageIOMac.mm; path = framework/render/Mac/ImageIOMac.mm; sourceTree = SOURCE_ROOT; };
+		249D974D700F46EA996C80F6 /* imgui_widgets.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui_widgets.cpp; path = 3rdlib/imgui/imgui_widgets.cpp; sourceTree = SOURCE_ROOT; };
+		279980821E114FEEAF7CF788 /* RenderResourceMac.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = RenderResourceMac.mm; path = framework/render/Mac/RenderResourceMac.mm; sourceTree = SOURCE_ROOT; };
+		2AB0C20FE012456D9A311F43 /* Platform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Platform.h; path = framework/include/Platform.h; sourceTree = SOURCE_ROOT; };
+		2B059A6AECFB43A6B4D96ED1 /* GunBarreActor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = GunBarreActor.cpp; path = framework/game/entity/GunBarreActor.cpp; sourceTree = SOURCE_ROOT; };
+		2C0699E48F304F3CBCD13A3E /* GameFramework.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = GameFramework.cpp; path = framework/gameframework/GameFramework.cpp; sourceTree = SOURCE_ROOT; };
+		2CE39E071B6F45E08E08D572 /* Camera.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Camera.h; path = framework/game/component/Camera.h; sourceTree = SOURCE_ROOT; };
+		2E7A1479318E4E4FAD2A236A /* FpsCounter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = FpsCounter.cpp; path = framework/gameframework/editor/FpsCounter.cpp; sourceTree = SOURCE_ROOT; };
+		2FE3CE79141E4C15B6BC40FF /* BMfont.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = BMfont.cpp; path = framework/render/BMfont.cpp; sourceTree = SOURCE_ROOT; };
+		317DC558868D48C8B21043B7 /* PhysicsWorld.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = PhysicsWorld.h; path = framework/game/PhysicsWorld.h; sourceTree = SOURCE_ROOT; };
+		343B5905AE8F4F5781267A96 /* EnemyTankStates.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = EnemyTankStates.h; path = framework/game/StateNode/EnemyTankStates.h; sourceTree = SOURCE_ROOT; };
+		351897251AF54CC6AC80BF5B /* ImGuiManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = ImGuiManager.cpp; path = framework/gameframework/log/ImGuiManager.cpp; sourceTree = SOURCE_ROOT; };
+		35611DAF73F04EAFAA803B19 /* Transform.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Transform.cpp; path = framework/game/component/Transform.cpp; sourceTree = SOURCE_ROOT; };
+		3640EA96CE354DC38A0CAD25 /* StaticMeshComponent.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = StaticMeshComponent.h; path = framework/game/component/StaticMeshComponent.h; sourceTree = SOURCE_ROOT; };
+		377E4745990846AFBA9A1C74 /* RenderTextureResource.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = RenderTextureResource.cpp; path = framework/render/RenderTextureResource.cpp; sourceTree = SOURCE_ROOT; };
+		380ED61FA039435B98342B9B /* test.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test.cpp; path = tests/MAC/test.cpp; sourceTree = SOURCE_ROOT; };
+		3B6BA12CF124405CABBA54C0 /* timer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = timer.h; path = framework/gameframework/timer/timer.h; sourceTree = SOURCE_ROOT; };
+		3C682D5C7B854438808E3B46 /* Component.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Component.h; path = framework/game/component/Component.h; sourceTree = SOURCE_ROOT; };
+		3F268521CE08435E94E1631F /* InputMapper.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = InputMapper.h; path = framework/gameframework/InputManager/InputMapper.h; sourceTree = SOURCE_ROOT; };
+		3F771BD9EB8C49D29B1D7AF5 /* IGame.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = IGame.h; path = framework/game/IGame.h; sourceTree = SOURCE_ROOT; };
+		42F98BE4B4EF4A848FF09882 /* GunBarreActor.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = GunBarreActor.h; path = framework/game/entity/GunBarreActor.h; sourceTree = SOURCE_ROOT; };
+		45202EB6BF794742A1F1C3FB /* LogSystem.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = LogSystem.h; path = framework/gameframework/log/LogSystem.h; sourceTree = SOURCE_ROOT; };
+		4575F76F59704CEC8C58EB7F /* AABB.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = AABB.cpp; path = framework/gameframework/physics/AABB.cpp; sourceTree = SOURCE_ROOT; };
+		4D0CB4C95E024A7687321771 /* KeyCodes.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = KeyCodes.h; path = framework/gameframework/InputManager/KeyCodes.h; sourceTree = SOURCE_ROOT; };
+		4E2E97FAD3F5472CBF94AF4D /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		521178C477D4407B996B97AE /* GameTimerManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = GameTimerManager.cpp; path = framework/game/timer/GameTimerManager.cpp; sourceTree = SOURCE_ROOT; };
+		53C9DB920ACC4DE58807ECB2 /* EnemyTankStates.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = EnemyTankStates.cpp; path = framework/game/StateNode/EnemyTankStates.cpp; sourceTree = SOURCE_ROOT; };
+		553246254EB742B3A9493999 /* SkyBoxActor.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SkyBoxActor.h; path = framework/game/entity/SkyBoxActor.h; sourceTree = SOURCE_ROOT; };
+		56CFD64D580F4F4EBB188F10 /* CollisionComponent.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CollisionComponent.h; path = framework/game/component/CollisionComponent.h; sourceTree = SOURCE_ROOT; };
+		5D6FD93E329647AA8721419F /* imgui_impl_metal.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = imgui_impl_metal.mm; path = 3rdlib/imgui/imgui_impl_metal.mm; sourceTree = SOURCE_ROOT; };
+		5E28975EB66E4B5E819159F4 /* WindowMac.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = WindowMac.mm; path = framework/render/Mac/WindowMac.mm; sourceTree = SOURCE_ROOT; };
+		5FB1E7AE04754A39B66F63D5 /* AudioManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = AudioManager.cpp; path = framework/gameframework/manager/AudioManager.cpp; sourceTree = SOURCE_ROOT; };
+		60E4169E01144D92A003C847 /* main_mac.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main_mac.cpp; path = framework/src/Mac/main_mac.cpp; sourceTree = SOURCE_ROOT; };
+		66FD75350CBD483A960E217F /* Actor.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Actor.h; path = framework/game/entity/Actor.h; sourceTree = SOURCE_ROOT; };
+		68C9BB8A26AF454A8E41DF6D /* framework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = framework.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B10F3D177514B20886A7192 /* SkyComponent.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SkyComponent.h; path = framework/game/component/SkyComponent.h; sourceTree = SOURCE_ROOT; };
+		6E8719C6A1F5490EB0D6A72D /* .DS_Store */ = {isa = PBXFileReference; explicitFileType = default; fileEncoding = 4; lastKnownFileType = file; name = .DS_Store; path = framework/game/.DS_Store; sourceTree = SOURCE_ROOT; };
+		6F6B5DEE966C428BAD2AC902 /* mapData.json */ = {isa = PBXFileReference; explicitFileType = default; fileEncoding = 4; lastKnownFileType = text.json; name = mapData.json; path = framework/game/data/mapData.json; sourceTree = SOURCE_ROOT; };
+		6FDB0ED064DC47F9B4911856 /* EnemyTankActor.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = EnemyTankActor.h; path = framework/game/entity/EnemyTankActor.h; sourceTree = SOURCE_ROOT; };
+		721EACA834E948FB969271A1 /* InputManager.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = InputManager.h; path = framework/gameframework/InputManager/InputManager.h; sourceTree = SOURCE_ROOT; };
+		74AEC5D12BF549528A095527 /* GameFramework.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = GameFramework.h; path = framework/gameframework/GameFramework.h; sourceTree = SOURCE_ROOT; };
+		77855BFC26A8446E8A631400 /* imgui.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui.cpp; path = 3rdlib/imgui/imgui.cpp; sourceTree = SOURCE_ROOT; };
+		78629A1679BA4FB6A8403258 /* Actor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Actor.cpp; path = framework/game/entity/Actor.cpp; sourceTree = SOURCE_ROOT; };
+		7A645C2B01DA4EF8B2C95D2D /* BMfont.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = BMfont.h; path = framework/render/BMfont.h; sourceTree = SOURCE_ROOT; };
+		825A2147739642DA91EA116C /* tiny_obj_loader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = tiny_obj_loader.cpp; path = framework/render/tiny_obj_loader.cpp; sourceTree = SOURCE_ROOT; };
+		82A9A72116E848518ADC75D1 /* WindowMac.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = WindowMac.h; path = framework/render/Mac/WindowMac.h; sourceTree = SOURCE_ROOT; };
+		84D4F8A5A5FD4D30A1F49E1B /* RenderInterface.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = RenderInterface.h; path = framework/render/RenderInterface.h; sourceTree = SOURCE_ROOT; };
+		8AAE380AC39A46A3B741325D /* ResourceManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ResourceManager.cpp; path = framework/gameframework/manager/ResourceManager.cpp; sourceTree = SOURCE_ROOT; };
+		8AD902A18475471DBD07BFBD /* PhysicsWorld.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PhysicsWorld.cpp; path = framework/game/PhysicsWorld.cpp; sourceTree = SOURCE_ROOT; };
+		8CEADB99019145F19D81472E /* TrankTrackR.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TrankTrackR.h; path = framework/game/entity/TrankTrackR.h; sourceTree = SOURCE_ROOT; };
+		9356D66C9FDE4517927FDF0D /* RenderMac.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = RenderMac.mm; path = framework/render/Mac/RenderMac.mm; sourceTree = SOURCE_ROOT; };
+		951A92132FA34EC1BFF6AA19 /* tiny_obj_loader.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = tiny_obj_loader.h; path = framework/render/tiny_obj_loader.h; sourceTree = SOURCE_ROOT; };
+		982BFDA3877C4901971CA69F /* IManager.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = IManager.h; path = framework/gameframework/IManager.h; sourceTree = SOURCE_ROOT; };
+		98CACB78765C4338BAB39516 /* IInputSystem.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = IInputSystem.h; path = framework/gameframework/InputManager/IInputSystem.h; sourceTree = SOURCE_ROOT; };
+		99158B07006C4A70A6D6E8D8 /* AssetCommon.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = AssetCommon.cpp; path = framework/gameframework/assets/AssetCommon.cpp; sourceTree = SOURCE_ROOT; };
+		9B0FAB48CCA94F2C9B1B2B4A /* Transform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Transform.h; path = framework/game/component/Transform.h; sourceTree = SOURCE_ROOT; };
+		9DB2964CEDB042FF9C1C768C /* InputAction.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = InputAction.h; path = framework/gameframework/InputManager/InputAction.h; sourceTree = SOURCE_ROOT; };
+		A4E4D82875D8463F9E04B8F8 /* RenderMac.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = RenderMac.h; path = framework/render/Mac/RenderMac.h; sourceTree = SOURCE_ROOT; };
+		A54D553F99944E559F5AD5E7 /* imgui_demo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui_demo.cpp; path = 3rdlib/imgui/imgui_demo.cpp; sourceTree = SOURCE_ROOT; };
+		A6417061AC73419785E23AB9 /* MapLoader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MapLoader.cpp; path = framework/game/level/MapLoader.cpp; sourceTree = SOURCE_ROOT; };
+		AC111553E0AF4D5E944F52B9 /* InputManagerAdapter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = InputManagerAdapter.cpp; path = framework/gameframework/InputManager/InputManagerAdapter.cpp; sourceTree = SOURCE_ROOT; };
+		AF7E27D066C244199FBEC15C /* WallActor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = WallActor.cpp; path = framework/game/entity/WallActor.cpp; sourceTree = SOURCE_ROOT; };
+		B01048126885414BA40D3193 /* InputSystemManager.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = InputSystemManager.h; path = framework/gameframework/manager/InputSystemManager.h; sourceTree = SOURCE_ROOT; };
+		B1A6968048424F94AA63D81A /* PlayerTankStates.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PlayerTankStates.cpp; path = framework/game/StateNode/PlayerTankStates.cpp; sourceTree = SOURCE_ROOT; };
+		B431CA5565A84D44B4A4FC3D /* BulletActor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = BulletActor.cpp; path = framework/game/entity/BulletActor.cpp; sourceTree = SOURCE_ROOT; };
+		BE529E1E222341BF860C45D7 /* TankActor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TankActor.cpp; path = framework/game/entity/TankActor.cpp; sourceTree = SOURCE_ROOT; };
+		BE6F76C231FF405997FC20E2 /* WallActor.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = WallActor.h; path = framework/game/entity/WallActor.h; sourceTree = SOURCE_ROOT; };
+		C20C4742D75A45219D3DF3D0 /* SkyBoxActor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = SkyBoxActor.cpp; path = framework/game/entity/SkyBoxActor.cpp; sourceTree = SOURCE_ROOT; };
+		C596D66741B24CA2865BA0C6 /* GameTimerManager.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = GameTimerManager.h; path = framework/game/timer/GameTimerManager.h; sourceTree = SOURCE_ROOT; };
+		C5D0EECE6481412B8F049BD9 /* TankGame.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TankGame.h; path = framework/game/TankGame.h; sourceTree = SOURCE_ROOT; };
+		C9C0EB4C20FF4231AE907166 /* CharacterControllerComponent.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CharacterControllerComponent.cpp; path = framework/game/component/CharacterControllerComponent.cpp; sourceTree = SOURCE_ROOT; };
+		CC009A78861B446095A66BCB /* AudioInterface.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = AudioInterface.h; path = framework/audio/AudioInterface.h; sourceTree = SOURCE_ROOT; };
+		CD9510B9FAA14BF88A7C7207 /* framework_tests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = framework_tests; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDB08F00733A4942B18F5A1E /* SpringArmComponent.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = SpringArmComponent.cpp; path = framework/game/component/SpringArmComponent.cpp; sourceTree = SOURCE_ROOT; };
+		CFE9D54581774269B1332593 /* FpsCounter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = FpsCounter.h; path = framework/gameframework/editor/FpsCounter.h; sourceTree = SOURCE_ROOT; };
+		D4D7EE3C54C4451B885F5A4F /* imgui_draw.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui_draw.cpp; path = 3rdlib/imgui/imgui_draw.cpp; sourceTree = SOURCE_ROOT; };
+		D8744ED49C2D41639BE71B5F /* Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = framework/build_xcode/CMakeFiles/framework.dir/Info.plist; sourceTree = SOURCE_ROOT; };
+		D9D8725607EB4630BC42101A /* LogSystem.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = LogSystem.cpp; path = framework/gameframework/log/LogSystem.cpp; sourceTree = SOURCE_ROOT; };
+		DBB930969A6044D89F2384DB /* Camera.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Camera.cpp; path = framework/game/component/Camera.cpp; sourceTree = SOURCE_ROOT; };
+		E20FE017E4824C438181CE2F /* imgui_impl_osx.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = imgui_impl_osx.mm; path = 3rdlib/imgui/imgui_impl_osx.mm; sourceTree = SOURCE_ROOT; };
+		E2D1CD25E69D4E379D046EAA /* CollisionComponent.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CollisionComponent.cpp; path = framework/game/component/CollisionComponent.cpp; sourceTree = SOURCE_ROOT; };
+		E62B9E23389F41DC90629D47 /* GroundActor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = GroundActor.cpp; path = framework/game/entity/GroundActor.cpp; sourceTree = SOURCE_ROOT; };
+		E6DAB1FF5F4A4C029B0DDF0D /* AudioManager.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = AudioManager.h; path = framework/gameframework/manager/AudioManager.h; sourceTree = SOURCE_ROOT; };
+		E707B3495A93471297C5DFB4 /* AudioResourceWave.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = AudioResourceWave.cpp; path = framework/audio/AudioResourceWave.cpp; sourceTree = SOURCE_ROOT; };
+		E92CA731598C4CAB96CCC171 /* InputMapper.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = InputMapper.cpp; path = framework/gameframework/InputManager/InputMapper.cpp; sourceTree = SOURCE_ROOT; };
+		EB12D6B3379C43F38DEE12EE /* PlayerTankActor.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = PlayerTankActor.h; path = framework/game/entity/PlayerTankActor.h; sourceTree = SOURCE_ROOT; };
+		EB3CE3DF0A994EE5A589DA62 /* TankActor.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TankActor.h; path = framework/game/entity/TankActor.h; sourceTree = SOURCE_ROOT; };
+		ECE19642012F41AEBCCCA28D /* Common.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Common.h; path = framework/include/Common.h; sourceTree = SOURCE_ROOT; };
+		EE02095246154808A3B19FB3 /* tga.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = tga.h; path = framework/render/tga.h; sourceTree = SOURCE_ROOT; };
+		EF984EBAF84F4488A76E60D8 /* Ray.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Ray.h; path = framework/gameframework/physics/Ray.h; sourceTree = SOURCE_ROOT; };
+		EFA8265BD34B4EDA8D671578 /* PlayerTankStates.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = PlayerTankStates.h; path = framework/game/StateNode/PlayerTankStates.h; sourceTree = SOURCE_ROOT; };
+		EFCF162ACAD8407588E25CF6 /* World.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = World.cpp; path = framework/game/World.cpp; sourceTree = SOURCE_ROOT; };
+		F2BBB1BA83544B4D8C9F6467 /* AudioResourceWave.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = AudioResourceWave.h; path = framework/audio/AudioResourceWave.h; sourceTree = SOURCE_ROOT; };
+		F478F1D71FCC45D093B2C61D /* PlayerTankActor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PlayerTankActor.cpp; path = framework/game/entity/PlayerTankActor.cpp; sourceTree = SOURCE_ROOT; };
+		F5AACE6B02BC4B899F1DB6C1 /* World.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = World.h; path = framework/game/World.h; sourceTree = SOURCE_ROOT; };
+		F6DEEF6E4A3747C4BD449D40 /* Constants.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Constants.h; path = framework/game/Constants.h; sourceTree = SOURCE_ROOT; };
+		FB0683B2974B452499C533CE /* LogSystemImGuiView.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = LogSystemImGuiView.cpp; path = framework/gameframework/log/LogSystemImGuiView.cpp; sourceTree = SOURCE_ROOT; };
+		FBC8A635607E4362A1359E50 /* tga.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = tga.cpp; path = framework/render/tga.cpp; sourceTree = SOURCE_ROOT; };
+		FED0559001F0481081758114 /* InputManagerAdapter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = InputManagerAdapter.h; path = framework/gameframework/InputManager/InputManagerAdapter.h; sourceTree = SOURCE_ROOT; };
+		FEFCBF1172AC4EB6B87C6035 /* MapLoader.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = MapLoader.h; path = framework/game/level/MapLoader.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		351B5C6A4B4645E6B9461649 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E847797F2AA44A4A4AA6E87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0910E835122D432AA7E801F9 = {
+			isa = PBXGroup;
+			children = (
+				25E8DFEF09864A289B132752 /* ALL_BUILD */,
+				6AC0605279CD4674BEE86E22 /* framework */,
+				46D30049951A4AA982AB8DC9 /* framework_tests */,
+				C764CC077F8D4DB7A71B13F0 /* Products */,
+				183DBFEAA76340DAADC83F81 /* Frameworks */,
+				A19B02A105EC404BB7982FD8 /* Resources */,
+			);
+			sourceTree = "<group>";
+		};
+		13EABE720E9345D1B2A7CF45 /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				78629A1679BA4FB6A8403258 /* Actor.cpp */,
+				66FD75350CBD483A960E217F /* Actor.h */,
+				B431CA5565A84D44B4A4FC3D /* BulletActor.cpp */,
+				229434E0564947A192C5EC35 /* BulletActor.h */,
+				02668425E79F406DB418B39E /* EnemyTankActor.cpp */,
+				6FDB0ED064DC47F9B4911856 /* EnemyTankActor.h */,
+				E62B9E23389F41DC90629D47 /* GroundActor.cpp */,
+				1C820BD23EEC4E6893C4F9A9 /* GroundActor.h */,
+				2B059A6AECFB43A6B4D96ED1 /* GunBarreActor.cpp */,
+				42F98BE4B4EF4A848FF09882 /* GunBarreActor.h */,
+				F478F1D71FCC45D093B2C61D /* PlayerTankActor.cpp */,
+				EB12D6B3379C43F38DEE12EE /* PlayerTankActor.h */,
+				C20C4742D75A45219D3DF3D0 /* SkyBoxActor.cpp */,
+				553246254EB742B3A9493999 /* SkyBoxActor.h */,
+				BE529E1E222341BF860C45D7 /* TankActor.cpp */,
+				EB3CE3DF0A994EE5A589DA62 /* TankActor.h */,
+				0AEEC0FDE5EA42C9B8A91A2C /* TankTrackL.h */,
+				051C09DCA1084AC1A5F835B2 /* TrankTrackL.cpp */,
+				1712176E4C29426EAAD12CDE /* TrankTrackR.cpp */,
+				8CEADB99019145F19D81472E /* TrankTrackR.h */,
+				AF7E27D066C244199FBEC15C /* WallActor.cpp */,
+				BE6F76C231FF405997FC20E2 /* WallActor.h */,
+			);
+			name = entity;
+			sourceTree = "<group>";
+		};
+		17BAF240F3D949E6B38E9B1D /* gameframework */ = {
+			isa = PBXGroup;
+			children = (
+				703B95510C894AFD8E67755A /* assets */,
+				46CE0149BAB044F5A0AF2707 /* InputManager */,
+				38F6612F004A4CC8881C0419 /* editor */,
+				571ED91485324ACDA7E6D620 /* log */,
+				E0DA9A9F74AA4E3AB4F34026 /* manager */,
+				48D5BEECA89A41E2AB82D8DF /* physics */,
+				A66CD4F82F874791BCA49BA8 /* timer */,
+				203C79FF463A4ADCB61E9F3C /* .DS_Store */,
+				2C0699E48F304F3CBCD13A3E /* GameFramework.cpp */,
+				74AEC5D12BF549528A095527 /* GameFramework.h */,
+				982BFDA3877C4901971CA69F /* IManager.h */,
+			);
+			name = gameframework;
+			sourceTree = "<group>";
+		};
+		183DBFEAA76340DAADC83F81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		20451172C37E40C3BADDE334 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				ECE19642012F41AEBCCCA28D /* Common.h */,
+				2AB0C20FE012456D9A311F43 /* Platform.h */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		25E8DFEF09864A289B132752 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				5728634816FE48388C9A5D22 /* CMake Rules */,
+				109EFAB1A18A4B43AC464A0E /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		2AFF63B362E14B4B9DE749A7 /* render */ = {
+			isa = PBXGroup;
+			children = (
+				B8A02AEAF191422592AB4AA8 /* Mac */,
+				2FE3CE79141E4C15B6BC40FF /* BMfont.cpp */,
+				7A645C2B01DA4EF8B2C95D2D /* BMfont.h */,
+				84D4F8A5A5FD4D30A1F49E1B /* RenderInterface.h */,
+				1CC423AFBCEB4BBB8A5DFA58 /* RenderMeshResource.cpp */,
+				377E4745990846AFBA9A1C74 /* RenderTextureResource.cpp */,
+				FBC8A635607E4362A1359E50 /* tga.cpp */,
+				EE02095246154808A3B19FB3 /* tga.h */,
+				825A2147739642DA91EA116C /* tiny_obj_loader.cpp */,
+				951A92132FA34EC1BFF6AA19 /* tiny_obj_loader.h */,
+			);
+			name = render;
+			sourceTree = "<group>";
+		};
+		38F6612F004A4CC8881C0419 /* editor */ = {
+			isa = PBXGroup;
+			children = (
+				2E7A1479318E4E4FAD2A236A /* FpsCounter.cpp */,
+				CFE9D54581774269B1332593 /* FpsCounter.h */,
+			);
+			name = editor;
+			sourceTree = "<group>";
+		};
+		3A5D7A9D722A4D7C95B935D8 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				77855BFC26A8446E8A631400 /* imgui.cpp */,
+				A54D553F99944E559F5AD5E7 /* imgui_demo.cpp */,
+				D4D7EE3C54C4451B885F5A4F /* imgui_draw.cpp */,
+				5D6FD93E329647AA8721419F /* imgui_impl_metal.mm */,
+				E20FE017E4824C438181CE2F /* imgui_impl_osx.mm */,
+				1EFD6BCB28D142249A5D5F3B /* imgui_tables.cpp */,
+				249D974D700F46EA996C80F6 /* imgui_widgets.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		3ED03F8EA6A94DE8907BCEB3 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				6F6B5DEE966C428BAD2AC902 /* mapData.json */,
+			);
+			name = data;
+			sourceTree = "<group>";
+		};
+		46CE0149BAB044F5A0AF2707 /* InputManager */ = {
+			isa = PBXGroup;
+			children = (
+				98CACB78765C4338BAB39516 /* IInputSystem.h */,
+				9DB2964CEDB042FF9C1C768C /* InputAction.h */,
+				115FAEF1AEF2442798843D9E /* InputManager.cpp */,
+				721EACA834E948FB969271A1 /* InputManager.h */,
+				AC111553E0AF4D5E944F52B9 /* InputManagerAdapter.cpp */,
+				FED0559001F0481081758114 /* InputManagerAdapter.h */,
+				E92CA731598C4CAB96CCC171 /* InputMapper.cpp */,
+				3F268521CE08435E94E1631F /* InputMapper.h */,
+				4D0CB4C95E024A7687321771 /* KeyCodes.h */,
+			);
+			name = InputManager;
+			sourceTree = "<group>";
+		};
+		46D30049951A4AA982AB8DC9 /* framework_tests */ = {
+			isa = PBXGroup;
+			children = (
+				8D8E09E420A342DE9C5DD058 /* Source Files */,
+				0603A1FA97E14796ADE4AD3A /* CMakeLists.txt */,
+			);
+			name = framework_tests;
+			sourceTree = "<group>";
+		};
+		48D5BEECA89A41E2AB82D8DF /* physics */ = {
+			isa = PBXGroup;
+			children = (
+				4575F76F59704CEC8C58EB7F /* AABB.cpp */,
+				20AD8B365C6A417ABF2F1957 /* AABB.h */,
+				EF984EBAF84F4488A76E60D8 /* Ray.h */,
+			);
+			name = physics;
+			sourceTree = "<group>";
+		};
+		50A572FABC004DEF8300650F /* StateNode */ = {
+			isa = PBXGroup;
+			children = (
+				53C9DB920ACC4DE58807ECB2 /* EnemyTankStates.cpp */,
+				343B5905AE8F4F5781267A96 /* EnemyTankStates.h */,
+				B1A6968048424F94AA63D81A /* PlayerTankStates.cpp */,
+				EFA8265BD34B4EDA8D671578 /* PlayerTankStates.h */,
+			);
+			name = StateNode;
+			sourceTree = "<group>";
+		};
+		571ED91485324ACDA7E6D620 /* log */ = {
+			isa = PBXGroup;
+			children = (
+				351897251AF54CC6AC80BF5B /* ImGuiManager.cpp */,
+				193FCF27CD8E49E1BE8F5044 /* ImGuiManager.h */,
+				D9D8725607EB4630BC42101A /* LogSystem.cpp */,
+				45202EB6BF794742A1F1C3FB /* LogSystem.h */,
+				FB0683B2974B452499C533CE /* LogSystemImGuiView.cpp */,
+				0EE6FACD9DBB4955A1156A24 /* LogSystemImGuiView.h */,
+			);
+			name = log;
+			sourceTree = "<group>";
+		};
+		5728634816FE48388C9A5D22 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		586F469AB8DF4E09B7062C99 /* timer */ = {
+			isa = PBXGroup;
+			children = (
+				521178C477D4407B996B97AE /* GameTimerManager.cpp */,
+				C596D66741B24CA2865BA0C6 /* GameTimerManager.h */,
+			);
+			name = timer;
+			sourceTree = "<group>";
+		};
+		58C44BC53034466984F8F1DF /* src */ = {
+			isa = PBXGroup;
+			children = (
+				E3EF27A3D1AD499DBD589C2B /* Mac */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		6A1618D0030E4CC899AFE738 /* level */ = {
+			isa = PBXGroup;
+			children = (
+				A6417061AC73419785E23AB9 /* MapLoader.cpp */,
+				FEFCBF1172AC4EB6B87C6035 /* MapLoader.h */,
+			);
+			name = level;
+			sourceTree = "<group>";
+		};
+		6AC0605279CD4674BEE86E22 /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				A9711D3413EE4621AC3422DE /* Resources */,
+				3A5D7A9D722A4D7C95B935D8 /* Source Files */,
+				AE8B3991EFA74274BA458FAD /* audio */,
+				F47487F122354072868AC3A8 /* game */,
+				17BAF240F3D949E6B38E9B1D /* gameframework */,
+				20451172C37E40C3BADDE334 /* include */,
+				2AFF63B362E14B4B9DE749A7 /* render */,
+				58C44BC53034466984F8F1DF /* src */,
+				4E2E97FAD3F5472CBF94AF4D /* CMakeLists.txt */,
+			);
+			name = framework;
+			sourceTree = "<group>";
+		};
+		703B95510C894AFD8E67755A /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				99158B07006C4A70A6D6E8D8 /* AssetCommon.cpp */,
+				1DFD53019E5A4101BB4C8A6A /* AssetCommon.h */,
+			);
+			name = assets;
+			sourceTree = "<group>";
+		};
+		70E4D8F5543949D1B249C854 /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				1CC710B1F9E34DCDAD1879AB /* AudioMac.mm */,
+			);
+			name = Mac;
+			sourceTree = "<group>";
+		};
+		7E94307D0D2B450FB376649E /* component */ = {
+			isa = PBXGroup;
+			children = (
+				DBB930969A6044D89F2384DB /* Camera.cpp */,
+				2CE39E071B6F45E08E08D572 /* Camera.h */,
+				C9C0EB4C20FF4231AE907166 /* CharacterControllerComponent.cpp */,
+				13AF0468980947C298599DE9 /* CharacterControllerComponent.h */,
+				E2D1CD25E69D4E379D046EAA /* CollisionComponent.cpp */,
+				56CFD64D580F4F4EBB188F10 /* CollisionComponent.h */,
+				3C682D5C7B854438808E3B46 /* Component.h */,
+				1CF447A307AC4D178A4CFCBB /* SkyComponent.cpp */,
+				6B10F3D177514B20886A7192 /* SkyComponent.h */,
+				CDB08F00733A4942B18F5A1E /* SpringArmComponent.cpp */,
+				10CB3131B158444FB2FD28F7 /* SpringArmComponent.h */,
+				15E0F178F4034559B371C64E /* StaticMeshComponent.cpp */,
+				3640EA96CE354DC38A0CAD25 /* StaticMeshComponent.h */,
+				35611DAF73F04EAFAA803B19 /* Transform.cpp */,
+				9B0FAB48CCA94F2C9B1B2B4A /* Transform.h */,
+			);
+			name = component;
+			sourceTree = "<group>";
+		};
+		8D8E09E420A342DE9C5DD058 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				380ED61FA039435B98342B9B /* test.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		A19B02A105EC404BB7982FD8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A66CD4F82F874791BCA49BA8 /* timer */ = {
+			isa = PBXGroup;
+			children = (
+				3B6BA12CF124405CABBA54C0 /* timer.h */,
+			);
+			name = timer;
+			sourceTree = "<group>";
+		};
+		A9711D3413EE4621AC3422DE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D8744ED49C2D41639BE71B5F /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		AE8B3991EFA74274BA458FAD /* audio */ = {
+			isa = PBXGroup;
+			children = (
+				70E4D8F5543949D1B249C854 /* Mac */,
+				CC009A78861B446095A66BCB /* AudioInterface.h */,
+				E707B3495A93471297C5DFB4 /* AudioResourceWave.cpp */,
+				F2BBB1BA83544B4D8C9F6467 /* AudioResourceWave.h */,
+			);
+			name = audio;
+			sourceTree = "<group>";
+		};
+		B8A02AEAF191422592AB4AA8 /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				2448F1AE94F84D9AADB67529 /* ImageIOMac.mm */,
+				A4E4D82875D8463F9E04B8F8 /* RenderMac.h */,
+				9356D66C9FDE4517927FDF0D /* RenderMac.mm */,
+				279980821E114FEEAF7CF788 /* RenderResourceMac.mm */,
+				82A9A72116E848518ADC75D1 /* WindowMac.h */,
+				5E28975EB66E4B5E819159F4 /* WindowMac.mm */,
+			);
+			name = Mac;
+			sourceTree = "<group>";
+		};
+		BCD02CCBF8F94D8B92449FE3 /* StateMachine */ = {
+			isa = PBXGroup;
+			children = (
+				1923746E33D14BE58EAB957B /* IState.h */,
+				16324B4D38614F68B56FD78B /* StateMachine.h */,
+			);
+			name = StateMachine;
+			sourceTree = "<group>";
+		};
+		C764CC077F8D4DB7A71B13F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68C9BB8A26AF454A8E41DF6D /* framework.app */,
+				CD9510B9FAA14BF88A7C7207 /* framework_tests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E0DA9A9F74AA4E3AB4F34026 /* manager */ = {
+			isa = PBXGroup;
+			children = (
+				5FB1E7AE04754A39B66F63D5 /* AudioManager.cpp */,
+				E6DAB1FF5F4A4C029B0DDF0D /* AudioManager.h */,
+				212D837542014DEF87F14615 /* InputSystemManager.cpp */,
+				B01048126885414BA40D3193 /* InputSystemManager.h */,
+				0ED8DC3288054D3184CDDCB4 /* RendererManager.cpp */,
+				0E734D5470CD4553BD47B071 /* RendererManager.h */,
+				8AAE380AC39A46A3B741325D /* ResourceManager.cpp */,
+				1AD48C4E1DA84AC2B478B063 /* ResourceManager.h */,
+			);
+			name = manager;
+			sourceTree = "<group>";
+		};
+		E3EF27A3D1AD499DBD589C2B /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				60E4169E01144D92A003C847 /* main_mac.cpp */,
+			);
+			name = Mac;
+			sourceTree = "<group>";
+		};
+		F47487F122354072868AC3A8 /* game */ = {
+			isa = PBXGroup;
+			children = (
+				BCD02CCBF8F94D8B92449FE3 /* StateMachine */,
+				50A572FABC004DEF8300650F /* StateNode */,
+				7E94307D0D2B450FB376649E /* component */,
+				3ED03F8EA6A94DE8907BCEB3 /* data */,
+				13EABE720E9345D1B2A7CF45 /* entity */,
+				6A1618D0030E4CC899AFE738 /* level */,
+				586F469AB8DF4E09B7062C99 /* timer */,
+				6E8719C6A1F5490EB0D6A72D /* .DS_Store */,
+				F6DEEF6E4A3747C4BD449D40 /* Constants.h */,
+				3F771BD9EB8C49D29B1D7AF5 /* IGame.h */,
+				8AD902A18475471DBD07BFBD /* PhysicsWorld.cpp */,
+				317DC558868D48C8B21043B7 /* PhysicsWorld.h */,
+				11FC3439B59A445FB028E773 /* TankGame.cpp */,
+				C5D0EECE6481412B8F049BD9 /* TankGame.h */,
+				EFCF162ACAD8407588E25CF6 /* World.cpp */,
+				F5AACE6B02BC4B899F1DB6C1 /* World.h */,
+			);
+			name = game;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0161C3D23048D99C09DBCB52 /* framework_tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9AA194C7C614453ABA66A1E /* Build configuration list for PBXNativeTarget "framework_tests" */;
+			buildPhases = (
+				85F40FCAA8C1487CA37408CF /* Sources */,
+				3E847797F2AA44A4A4AA6E87 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52A97C113C8F4847A999321C /* PBXTargetDependency */,
+			);
+			name = framework_tests;
+			productName = framework_tests;
+			productReference = CD9510B9FAA14BF88A7C7207 /* framework_tests */;
+			productType = "com.apple.product-type.tool";
+		};
+		6346CD8CC9D51F1427341A54 /* framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FE8413964484AC089C61064 /* Build configuration list for PBXNativeTarget "framework" */;
+			buildPhases = (
+				E0390EF30FA84A8A8B17D209 /* Sources */,
+				351B5C6A4B4645E6B9461649 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E5530D60752640F7AFBE86BB /* PBXTargetDependency */,
+			);
+			name = framework;
+			productName = framework;
+			productReference = 68C9BB8A26AF454A8E41DF6D /* framework.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA3AAB9F31C8417CBCA00D1F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 2650;
+			};
+			buildConfigurationList = 529BD21D816241FFB2EBF650 /* Build configuration list for PBXProject "framework" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0910E835122D432AA7E801F9;
+			projectDirPath = /Users/zhengliang.pang/3DTankGame;
+			projectRoot = "";
+			targets = (
+				0D07A66294AC342227A5CE5D /* ALL_BUILD */,
+				6346CD8CC9D51F1427341A54 /* framework */,
+				0161C3D23048D99C09DBCB52 /* framework_tests */,
+				3F37C274BF035AC1BAD98021 /* ZERO_CHECK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7CFFC353AADCCB12A932FB89 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+				/Users/zhengliang.pang/3DTankGame/framework/build_xcode/CMakeFiles/ALL_BUILD,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/zhengliang.pang/3DTankGame/framework/build_xcode\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/zhengliang.pang/3DTankGame/framework/build_xcode\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/zhengliang.pang/3DTankGame/framework/build_xcode\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/zhengliang.pang/3DTankGame/framework/build_xcode\n  echo Build\\ all\\ projects\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FEE5BB5F2A242F9F3FC78FD3 /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+				/Users/zhengliang.pang/3DTankGame/framework/build_xcode/CMakeFiles/ZERO_CHECK,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/zhengliang.pang/3DTankGame/framework/build_xcode\n  make -f /Users/zhengliang.pang/3DTankGame/framework/build_xcode/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/zhengliang.pang/3DTankGame/framework/build_xcode\n  make -f /Users/zhengliang.pang/3DTankGame/framework/build_xcode/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/zhengliang.pang/3DTankGame/framework/build_xcode\n  make -f /Users/zhengliang.pang/3DTankGame/framework/build_xcode/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/zhengliang.pang/3DTankGame/framework/build_xcode\n  make -f /Users/zhengliang.pang/3DTankGame/framework/build_xcode/CMakeScripts/ReRunCMake.make\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		85F40FCAA8C1487CA37408CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C4E8FC0DC684CA0ABDC6E18 /* test.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0390EF30FA84A8A8B17D209 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8BD4A38B42F4E71B6FF6B5A /* imgui.cpp in Sources */,
+				B49B96CBCF644AB8A08D2E08 /* imgui_demo.cpp in Sources */,
+				C612DA4B7D244CB1A062414C /* imgui_draw.cpp in Sources */,
+				93AC8B908D734B9BB20C7AC6 /* imgui_impl_metal.mm in Sources */,
+				3054D53473F5459FA015011D /* imgui_impl_osx.mm in Sources */,
+				D6FC7B19D17F4B57A1BA043F /* imgui_tables.cpp in Sources */,
+				AF283A5579EC476BB2FF2147 /* imgui_widgets.cpp in Sources */,
+				059D7DDBEEE242A19F689450 /* AudioResourceWave.cpp in Sources */,
+				2B94C8AB178B4D0187D34C8D /* AudioMac.mm in Sources */,
+				41FF240B44134DC383C2C871 /* PhysicsWorld.cpp in Sources */,
+				614D58076E2E4D808FB8C9C5 /* EnemyTankStates.cpp in Sources */,
+				AE407B7CCB2943DB8DA42FCD /* PlayerTankStates.cpp in Sources */,
+				7FD165C5C165492CB5B8E9E7 /* TankGame.cpp in Sources */,
+				2CD99CABA0254E49B742AE78 /* World.cpp in Sources */,
+				98908E17BA494FEC859FD0F4 /* Camera.cpp in Sources */,
+				22AA3DFF0C054C2D9DC40954 /* CharacterControllerComponent.cpp in Sources */,
+				90AA6DCEC06A41A59FA1AACB /* CollisionComponent.cpp in Sources */,
+				CD0B1255345C4380978ED2EF /* SkyComponent.cpp in Sources */,
+				574F576CA12D4B16AD1774CE /* SpringArmComponent.cpp in Sources */,
+				614032C80DF641AEA574A326 /* StaticMeshComponent.cpp in Sources */,
+				5CFE93B4A6F24526B9ADD2B6 /* Transform.cpp in Sources */,
+				3DEBC1EE267A409F964ABA9D /* Actor.cpp in Sources */,
+				3807AC15B83844ED8D60F628 /* BulletActor.cpp in Sources */,
+				82B7B69A1ADC42C182C89655 /* EnemyTankActor.cpp in Sources */,
+				D9CD7A96285A42D5ABB58054 /* GroundActor.cpp in Sources */,
+				F6B81A9802614873923E2799 /* GunBarreActor.cpp in Sources */,
+				0372793ECD914F88822541E7 /* PlayerTankActor.cpp in Sources */,
+				3AE84922C6494143846E0C6B /* SkyBoxActor.cpp in Sources */,
+				01D9CC87A03C419D8BC5B70C /* TankActor.cpp in Sources */,
+				682F840DB6EA421FA0894A47 /* TrankTrackL.cpp in Sources */,
+				58F0A00D3C0B4F93BC9F65C7 /* TrankTrackR.cpp in Sources */,
+				BE678826EC474653A80DFC76 /* WallActor.cpp in Sources */,
+				941033A0320C470796CF8944 /* MapLoader.cpp in Sources */,
+				35D2E245540047F28B2D1E9E /* GameTimerManager.cpp in Sources */,
+				B6F008E615EF4743A5BFF382 /* GameFramework.cpp in Sources */,
+				50A09C619462438A8577198A /* InputManager.cpp in Sources */,
+				9C4ADA7A08D54DDBBD3C97F0 /* InputManagerAdapter.cpp in Sources */,
+				8C5C81917CD54E26A225110F /* InputMapper.cpp in Sources */,
+				282820B50E7E412B996D3580 /* AssetCommon.cpp in Sources */,
+				B365B87D4E764DA89142D2A7 /* FpsCounter.cpp in Sources */,
+				615D76A31E49437CA534A158 /* ImGuiManager.cpp in Sources */,
+				526A1D7404E04581B91BB598 /* LogSystem.cpp in Sources */,
+				490AFA717E824CD3B4C07F62 /* LogSystemImGuiView.cpp in Sources */,
+				640D83625C48499DB51E7FD2 /* AudioManager.cpp in Sources */,
+				47FC49B605C94EA89EE79C07 /* InputSystemManager.cpp in Sources */,
+				F06530C1D2B44A81BE78D298 /* RendererManager.cpp in Sources */,
+				164856975B664D5FAE8AFC8F /* ResourceManager.cpp in Sources */,
+				39F717E170544CF39781CD58 /* AABB.cpp in Sources */,
+				A97EF70950E84335B9808225 /* BMfont.cpp in Sources */,
+				4560456660294F5DABD2187A /* ImageIOMac.mm in Sources */,
+				43E4609D311C49C18B125B60 /* RenderMac.mm in Sources */,
+				56A92FE4FAB4451E97548C12 /* RenderResourceMac.mm in Sources */,
+				729EAD66F83B45F79206BF87 /* WindowMac.mm in Sources */,
+				0442E72EEA314529B526F6F2 /* RenderMeshResource.cpp in Sources */,
+				DF28A744FCFD4E108E17B61F /* RenderTextureResource.cpp in Sources */,
+				B56E79F0A60F449C9C36E7F1 /* tga.cpp in Sources */,
+				471FF9BB7CB5495AA006A6B8 /* tiny_obj_loader.cpp in Sources */,
+				D8066867DA5E49258BAF7519 /* main_mac.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3B334B5E482646939D67DBC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F37C274BF035AC1BAD98021 /* ZERO_CHECK */;
+			targetProxy = EEEE62FB3F00479C90AF3A57 /* PBXContainerItemProxy */;
+		};
+		402065286A8B481D86DF157C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0161C3D23048D99C09DBCB52 /* framework_tests */;
+			targetProxy = AF1BF987D17B4FC7B6E9B443 /* PBXContainerItemProxy */;
+		};
+		52A97C113C8F4847A999321C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F37C274BF035AC1BAD98021 /* ZERO_CHECK */;
+			targetProxy = 98297A8C2A4D448BAF430E5C /* PBXContainerItemProxy */;
+		};
+		6D81D4351F2A473A9A9FED76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6346CD8CC9D51F1427341A54 /* framework */;
+			targetProxy = F9F752E2949B4B55A40150E7 /* PBXContainerItemProxy */;
+		};
+		E5530D60752640F7AFBE86BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F37C274BF035AC1BAD98021 /* ZERO_CHECK */;
+			targetProxy = 7D40FAED035F42F883D643FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0476480A48504D988029B452 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/zhengliang.pang/3DTankGame/framework/build_xcode/RelWithDebInfo;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					GLM_ENABLE_EXPERIMENTAL,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/zhengliang.pang/3DTankGame/framework,
+					/Users/zhengliang.pang/3DTankGame/framework/include,
+					/Users/zhengliang.pang/3DTankGame/framework/gameframework,
+					/Users/zhengliang.pang/3DTankGame/3rdlib/glm,
+					/Users/zhengliang.pang/3DTankGame/3rdlib/imgui,
+					/Users/zhengliang.pang/3DTankGame/3rdlib/doctest,
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = /Users/zhengliang.pang/3DTankGame/framework/build_xcode/CMakeFiles/framework.dir/Info.plist;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++17'",
+					"-Wall",
+					"-Wextra",
+					"-Werror",
+					"-ffast-math",
+				);
+				OTHER_LDFLAGS = (
+					"-Xlinker",
+					"-no_warn_duplicate_libraries",
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"-framework",
+					Metal,
+					"-framework",
+					MetalKit,
+					"-framework",
+					Cocoa,
+					"-framework",
+					CoreAudio,
+					"-framework",
+					AudioToolbox,
+					"-framework",
+					AVFoundation,
+					"-framework",
+					Foundation,
+					"-framework",
+					QuartzCore,
+					"-framework",
+					GameController,
+					"-lobjc",
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.virtuos.training.3dtankrender;
+				PRODUCT_NAME = framework;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/zhengliang.pang/3DTankGame/framework/build_xcode/build/framework.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		1182BBB70750460A97C73B41 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				MACOSX_DEPLOYMENT_TARGET = 26.3;
+				SDKROOT = "";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/zhengliang.pang/3DTankGame/framework/build_xcode/build;
+			};
+			name = MinSizeRel;
+		};
+		2F49D3F5C433435FA436A92F /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				MACOSX_DEPLOYMENT_TARGET = 26.3;
+				SDKROOT = "";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/zhengliang.pang/3DTankGame/framework/build_xcode/build;
+			};
+			name = RelWithDebInfo;
+		};
+		30CEE9FCD0F34DD0886708BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		3A7C95F2CDA145BE98AB3AFF /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/zhengliang.pang/3DTankGame/framework/build_xcode/MinSizeRel;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					GLM_ENABLE_EXPERIMENTAL,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/zhengliang.pang/3DTankGame/framework,
+					/Users/zhengliang.pang/3DTankGame/framework/include,
+					/Users/zhengliang.pang/3DTankGame/framework/gameframework,
+					/Users/zhengliang.pang/3DTankGame/3rdlib/glm,
+					/Users/zhengliang.pang/3DTankGame/3rdlib/imgui,
+					/Users/zhengliang.pang/3DTankGame/3rdlib/doctest,
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = /Users/zhengliang.pang/3DTankGame/framework/build_xcode/CMakeFiles/framework.dir/Info.plist;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++17'",
+					"-Wall",
+					"-Wextra",
+					"-Werror",
+					"-ffast-math",
+				);
+				OTHER_LDFLAGS = (
+					"-Xlinker",
+					"-no_warn_duplicate_libraries",
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"-framework",
+					Metal,
+					"-framework",
+					MetalKit,
+					"-framework",
+					Cocoa,
+					"-framework",
+					CoreAudio,
+					"-framework",
+					AudioToolbox,
+					"-framework",
+					AVFoundation,
+					"-framework",
+					Foundation,
+					"-framework",
+					QuartzCore,
+					"-framework",
+					GameController,
+					"-lobjc",
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.virtuos.training.3dtankrender;
+				PRODUCT_NAME = framework;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/zhengliang.pang/3DTankGame/framework/build_xcode/build/framework.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		3D132503D2864CF3B33867C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		3DBDDDA508924304B94DA53E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/zhengliang.pang/3DTankGame/framework/build_xcode/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					GLM_ENABLE_EXPERIMENTAL,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/zhengliang.pang/3DTankGame/framework,
+					/Users/zhengliang.pang/3DTankGame/framework/include,
+					/Users/zhengliang.pang/3DTankGame/3rdlib/glm,
+					/Users/zhengliang.pang/3DTankGame/3rdlib/doctest,
+					/Users/zhengliang.pang/3DTankGame/3rdlib/imgui,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++17' ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = framework_tests;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/zhengliang.pang/3DTankGame/framework/build_xcode/build/framework_tests.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		48CE006856774868A543CBE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/zhengliang.pang/3DTankGame/framework/build_xcode/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					_DEBUG,
+					DEBUG,
+					GLM_ENABLE_EXPERIMENTAL,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/zhengliang.pang/3DTankGame/framework,
+					/Users/zhengliang.pang/3DTankGame/framework/include,
+					/Users/zhengliang.pang/3DTankGame/framework/gameframework,
+					/Users/zhengliang.pang/3DTankGame/3rdlib/glm,
+					/Users/zhengliang.pang/3DTankGame/3rdlib/imgui,
+					/Users/zhengliang.pang/3DTankGame/3rdlib/doctest,
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = /Users/zhengliang.pang/3DTankGame/framework/build_xcode/CMakeFiles/framework.dir/Info.plist;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"'-std=gnu++17'",
+					"-Wall",
+					"-Wextra",
+					"-Werror",
+					"-ffast-math",
+				);
+				OTHER_LDFLAGS = (
+					"-Xlinker",
+					"-no_warn_duplicate_libraries",
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"-framework",
+					Metal,
+					"-framework",
+					MetalKit,
+					"-framework",
+					Cocoa,
+					"-framework",
+					CoreAudio,
+					"-framework",
+					AudioToolbox,
+					"-framework",
+					AVFoundation,
+					"-framework",
+					Foundation,
+					"-framework",
+					QuartzCore,
+					"-framework",
+					GameController,
+					"-lobjc",
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.virtuos.training.3dtankrender;
+				PRODUCT_NAME = framework;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/zhengliang.pang/3DTankGame/framework/build_xcode/build/framework.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		5EA4700BB6EF47C8933FE6D5 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/zhengliang.pang/3DTankGame/framework/build_xcode/MinSizeRel;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					GLM_ENABLE_EXPERIMENTAL,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/zhengliang.pang/3DTankGame/framework,
+					/Users/zhengliang.pang/3DTankGame/framework/include,
+					/Users/zhengliang.pang/3DTankGame/3rdlib/glm,
+					/Users/zhengliang.pang/3DTankGame/3rdlib/doctest,
+					/Users/zhengliang.pang/3DTankGame/3rdlib/imgui,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++17'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = framework_tests;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/zhengliang.pang/3DTankGame/framework/build_xcode/build/framework_tests.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		7151344CDB754AEB9CD481CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/zhengliang.pang/3DTankGame/framework/build_xcode/Release;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					NDEBUG,
+					GLM_ENABLE_EXPERIMENTAL,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/zhengliang.pang/3DTankGame/framework,
+					/Users/zhengliang.pang/3DTankGame/framework/include,
+					/Users/zhengliang.pang/3DTankGame/framework/gameframework,
+					/Users/zhengliang.pang/3DTankGame/3rdlib/glm,
+					/Users/zhengliang.pang/3DTankGame/3rdlib/imgui,
+					/Users/zhengliang.pang/3DTankGame/3rdlib/doctest,
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = /Users/zhengliang.pang/3DTankGame/framework/build_xcode/CMakeFiles/framework.dir/Info.plist;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++17'",
+					"-Wall",
+					"-Wextra",
+					"-Werror",
+					"-ffast-math",
+				);
+				OTHER_LDFLAGS = (
+					"-Xlinker",
+					"-no_warn_duplicate_libraries",
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"-framework",
+					Metal,
+					"-framework",
+					MetalKit,
+					"-framework",
+					Cocoa,
+					"-framework",
+					CoreAudio,
+					"-framework",
+					AudioToolbox,
+					"-framework",
+					AVFoundation,
+					"-framework",
+					Foundation,
+					"-framework",
+					QuartzCore,
+					"-framework",
+					GameController,
+					"-lobjc",
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.virtuos.training.3dtankrender;
+				PRODUCT_NAME = framework;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/zhengliang.pang/3DTankGame/framework/build_xcode/build/framework.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		715885AB24434ABCA33FA39D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		8E330C5E70624EB4B6366FD0 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/zhengliang.pang/3DTankGame/framework/build_xcode/RelWithDebInfo;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					GLM_ENABLE_EXPERIMENTAL,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/zhengliang.pang/3DTankGame/framework,
+					/Users/zhengliang.pang/3DTankGame/framework/include,
+					/Users/zhengliang.pang/3DTankGame/3rdlib/glm,
+					/Users/zhengliang.pang/3DTankGame/3rdlib/doctest,
+					/Users/zhengliang.pang/3DTankGame/3rdlib/imgui,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++17'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = framework_tests;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/zhengliang.pang/3DTankGame/framework/build_xcode/build/framework_tests.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		9BD481B9938544E592F997DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		D90C4FFAD26B4161BB6557AB /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		D95F26D66A804592A90D56DC /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		E3A31E8672FA46A9A1C92564 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		E56B2FA8E8834D758B355AE8 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		E90A6DFA57C0436089A952B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				MACOSX_DEPLOYMENT_TARGET = 26.3;
+				SDKROOT = "";
+				SYMROOT = /Users/zhengliang.pang/3DTankGame/framework/build_xcode/build;
+			};
+			name = Debug;
+		};
+		EA1202FA3E974239826E44F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				MACOSX_DEPLOYMENT_TARGET = 26.3;
+				SDKROOT = "";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/zhengliang.pang/3DTankGame/framework/build_xcode/build;
+			};
+			name = Release;
+		};
+		EDCEB6F04786489691D59AB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/zhengliang.pang/3DTankGame/framework/build_xcode/Release;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					GLM_ENABLE_EXPERIMENTAL,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/zhengliang.pang/3DTankGame/framework,
+					/Users/zhengliang.pang/3DTankGame/framework/include,
+					/Users/zhengliang.pang/3DTankGame/3rdlib/glm,
+					/Users/zhengliang.pang/3DTankGame/3rdlib/doctest,
+					/Users/zhengliang.pang/3DTankGame/3rdlib/imgui,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++17'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = framework_tests;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/zhengliang.pang/3DTankGame/framework/build_xcode/build/framework_tests.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0FE8413964484AC089C61064 /* Build configuration list for PBXNativeTarget "framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48CE006856774868A543CBE5 /* Debug */,
+				7151344CDB754AEB9CD481CB /* Release */,
+				3A7C95F2CDA145BE98AB3AFF /* MinSizeRel */,
+				0476480A48504D988029B452 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		529BD21D816241FFB2EBF650 /* Build configuration list for PBXProject "framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E90A6DFA57C0436089A952B4 /* Debug */,
+				EA1202FA3E974239826E44F5 /* Release */,
+				1182BBB70750460A97C73B41 /* MinSizeRel */,
+				2F49D3F5C433435FA436A92F /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6E41443E2319498384D8E9CF /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				715885AB24434ABCA33FA39D /* Debug */,
+				9BD481B9938544E592F997DE /* Release */,
+				D95F26D66A804592A90D56DC /* MinSizeRel */,
+				D90C4FFAD26B4161BB6557AB /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E9AA194C7C614453ABA66A1E /* Build configuration list for PBXNativeTarget "framework_tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DBDDDA508924304B94DA53E /* Debug */,
+				EDCEB6F04786489691D59AB5 /* Release */,
+				5EA4700BB6EF47C8933FE6D5 /* MinSizeRel */,
+				8E330C5E70624EB4B6366FD0 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FCE97E5B98E5468CA90FC67F /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D132503D2864CF3B33867C2 /* Debug */,
+				30CEE9FCD0F34DD0886708BF /* Release */,
+				E56B2FA8E8834D758B355AE8 /* MinSizeRel */,
+				E3A31E8672FA46A9A1C92564 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BA3AAB9F31C8417CBCA00D1F /* Project object */;
+}

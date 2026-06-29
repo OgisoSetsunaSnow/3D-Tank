@@ -1,0 +1,18 @@
+﻿/* SIE CONFIDENTIAL
+PlayStation(R)4 Programmer Tool Runtime Library Release 09.008.001
+* Copyright (C) 2013 Sony Interactive Entertainment Inc.
+*/
+
+#include "std_cbuffer.h"
+#include "vsoutput.hs"
+
+SamplerState samp0 : register(s0);
+Texture2D colorMap : register(t0);
+
+float4 main(VS_OUTPUT Input) : S_TARGET_OUTPUT
+{
+	float4 finalcolor = colorMap.Sample(samp0, Input.UV) * float4(Input.Color, 1.0f);
+	if(finalcolor.w < 0.01f)
+		discard;
+	return finalcolor;
+}

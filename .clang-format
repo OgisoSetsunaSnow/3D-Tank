@@ -1,0 +1,95 @@
+# ============================================================
+# .clang-format — Virtuos C++ Coding Standard
+# 工具版本: clang-format 14+
+# ============================================================
+
+Language:        Cpp
+Standard:        c++20
+
+# --- 基础缩进 ---
+IndentWidth:              4
+TabWidth:                 4
+UseTab:                   Never
+ContinuationIndentWidth:  4
+AccessModifierOffset:     -4       # public/private/protected 与类体对齐
+
+# --- 列宽 ---
+ColumnLimit:     120
+
+# --- 括号风格（Allman 风格：大括号换行）---
+BreakBeforeBraces: Allman
+
+# --- 命名空间 ---
+NamespaceIndentation:         None
+CompactNamespaces:            false
+FixNamespaceComments:         true  # 自动添加 } // namespace Xxx 注释
+
+# --- Include 排序 ---
+SortIncludes:               CaseSensitive
+IncludeBlocks:              Regroup
+# #pragma once 之后的 include 顶部规则由此控制
+IncludeCategories:
+  - Regex:    '^<.*\.h>'       # C 系统头文件
+    Priority: 3
+  - Regex:    '^<.*>'          # C++ 标准库
+    Priority: 2
+  - Regex:    '.*'             # 本地头文件
+    Priority: 1
+
+# --- 空格与对齐 ---
+SpaceBeforeParens:            ControlStatements   # if/for/while 前有空格
+SpaceInEmptyParentheses:      false
+SpaceAfterCStyleCast:         true                # (int) x → (int) x
+SpacesInCStyleCastParentheses: false
+SpaceBeforeAssignmentOperators: true
+SpaceAroundPointerQualifiers:  Default
+PointerAlignment:              Left               # int* ptr 风格
+
+# --- 函数参数 / 调用对齐 ---
+AlignAfterOpenBracket:          Align
+BinPackArguments:               false
+BinPackParameters:              false
+AllowAllArgumentsOnNextLine:    false
+AllowAllParametersOfDeclarationOnNextLine: false
+
+# --- 单行内容控制 ---
+AllowShortIfStatementsOnASingleLine:    Never
+AllowShortLoopsOnASingleLine:           false
+AllowShortFunctionsOnASingleLine:       Inline   # 只允许类内简短函数单行
+AllowShortBlocksOnASingleLine:          Empty    # 只允许空块单行 {}
+AllowShortCaseLabelsOnASingleLine:      false
+AllowShortLambdasOnASingleLine:         Inline
+
+# --- for 循环：强制多语句换行 ---
+# (for循环体始终使用大括号，配合 clang-tidy 的 readability-braces-around-statements)
+
+# --- 构造函数初始化列表 ---
+BreakConstructorInitializers:    BeforeComma
+ConstructorInitializerIndentWidth: 4
+
+# --- 模板 ---
+AlwaysBreakTemplateDeclarations: Yes
+
+# --- 注释 ---
+ReflowComments:               true
+SpacesBeforeTrailingComments:  2
+
+# --- 尾随空白 ---
+# clang-format 会自动去除行尾空白
+
+# --- 空行控制 ---
+MaxEmptyLinesToKeep:          2
+EmptyLineAfterAccessModifier: Never
+EmptyLineBeforeAccessModifier: LogicalBlock
+
+# --- 对齐选项 ---
+AlignConsecutiveAssignments:
+  Enabled:          false       # 不强制对齐连续赋值（避免过度格式化）
+AlignConsecutiveDeclarations:
+  Enabled:          false
+AlignTrailingComments:
+  Kind:             Always
+  OverEmptyLines:   1
+
+# --- 三元运算符 ---
+BreakBeforeTernaryOperators: true

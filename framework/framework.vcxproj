@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ORBIS">
+      <Configuration>Debug</Configuration>
+      <Platform>ORBIS</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ORBIS">
+      <Configuration>Release</Configuration>
+      <Platform>ORBIS</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>3DTankGame</ProjectName>
+    <ProjectGuid>{C1F182EE-C781-4BC4-9C98-76E67D3D8068}</ProjectGuid>
+    <RootNamespace>dkdev</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <GnmProjectType Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">Sample</GnmProjectType>
+    <GnmProjectType Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">Sample</GnmProjectType>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">
+    <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+    <Import Project="$(SolutionDir)\SceGnm.props" Condition="Exists('$(SolutionDir)\SceGnm.Development.props')" />
+    <Import Project="$(SCE_ORBIS_SDK_DIR)\host_tools\msbuild\SceGnm.props" Condition="!Exists('$(SolutionDir)\SceGnm.Development.props')" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">
+    <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+    <Import Project="$(SolutionDir)\SceGnm.props" Condition="Exists('$(SolutionDir)\SceGnm.Development.props')" />
+    <Import Project="$(SCE_ORBIS_SDK_DIR)\host_tools\msbuild\SceGnm.props" Condition="!Exists('$(SolutionDir)\SceGnm.Development.props')" />
+  </ImportGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <GnmUseSampleCommon Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">false</GnmUseSampleCommon>
+    <GnmUseSampleCommon Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">false</GnmUseSampleCommon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)\Build\Output</OutDir>
+    <IntDir>$(SolutionDir)\Build\Obj\$(Configuration)_$(Platform)_$(ProjectName)\</IntDir>
+    <TargetName>$(ProjectName)_debug</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <IncludePath>$(ProjectDir);$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)\Build\Output</OutDir>
+    <IntDir>$(SolutionDir)\Build\Obj\$(Configuration)_$(Platform)_$(ProjectName)\</IntDir>
+    <TargetName>$(ProjectName)</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <IncludePath>$(ProjectDir);$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">
+    <IncludePath>$(ProjectDir);$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">
+    <IncludePath>$(ProjectDir);$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>-lSceSystemService_stub;-lSceAudioOut_stub_weak;-lScePosix_stub_weak;toolkit_$(Configuration).a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)\render\PS4\api_gnm\toolkit;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>if not exist "$(ProjectDir)\sce_module" mkdir "$(ProjectDir)\sce_module"
+copy /Y "$(SCE_ORBIS_SDK_DIR)\target\sce_module\libc.prx" "$(ProjectDir)\sce_module\"
+copy /Y "$(SCE_ORBIS_SDK_DIR)\target\sce_module\libSceFios2.prx" "$(ProjectDir)\sce_module\"</Command>
+    </PostBuildEvent>
+    <ClCompile>
+      <PreprocessorDefinitions>_ORBIS;SCE_GNM_DEBUG;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>-lSceSystemService_stub;-lSceAudioOut_stub_weak;-lScePosix_stub_weak;toolkit.a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)\render\PS4\api_gnm\toolkit;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>if not exist "$(ProjectDir)\sce_module" mkdir "$(ProjectDir)\sce_module"
+copy /Y "$(SCE_ORBIS_SDK_DIR)\target\sce_module\libc.prx" "$(ProjectDir)\sce_module\"
+copy /Y "$(SCE_ORBIS_SDK_DIR)\target\sce_module\libSceFios2.prx" "$(ProjectDir)\sce_module\"</Command>
+    </PostBuildEvent>
+    <ClCompile>
+      <PreprocessorDefinitions>_ORBIS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;DEBUG;_WINDOWS;%(PreprocessorDefinitions);GLM_ENABLE_EXPERIMENTAL</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>.\\include;$(SolutionDir)3rdlib\doctest;$(SolutionDir)3rdlib\imgui;$(SolutionDir)3rdlib\glm;$(SolutionDir)framework\gameframework;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3dcompiler.lib;dxguid.lib;d3d12.lib;dxgi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <TreatLinkerWarningAsErrors>false</TreatLinkerWarningAsErrors>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;PROFILE;_WINDOWS;%(PreprocessorDefinitions);GLM_ENABLE_EXPERIMENTAL</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>.\\include;$(SolutionDir)3rdlib\doctest;$(SolutionDir)3rdlib\imgui;$(SolutionDir)3rdlib\glm;$(SolutionDir)framework\gameframework;$(SolutionDir)3rdlib\json;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>d3dcompiler.lib;dxguid.lib;d3d12.lib;dxgi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <TreatLinkerWarningAsErrors>false</TreatLinkerWarningAsErrors>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\3rdlib\imgui\imgui.cpp" />
+    <ClCompile Include="..\3rdlib\imgui\imgui_demo.cpp" />
+    <ClCompile Include="..\3rdlib\imgui\imgui_draw.cpp" />
+    <ClCompile Include="..\3rdlib\imgui\imgui_impl_dx12.cpp" />
+    <ClCompile Include="..\3rdlib\imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="..\3rdlib\imgui\imgui_tables.cpp" />
+    <ClCompile Include="..\3rdlib\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="audio\AudioResourceWave.cpp" />
+    <ClCompile Include="audio\PC\AudioPC.cpp" />
+    <ClCompile Include="gameframework\assets\AssetCommon.cpp" />
+    <ClCompile Include="gameframework\editor\FpsCounter.cpp" />
+    <ClCompile Include="gameframework\GameFramework.cpp" />
+    <ClCompile Include="gameframework\IManager.h" />
+    <ClCompile Include="gameframework\log\ImGuiManager.cpp" />
+    <ClCompile Include="gameframework\log\LogSystem.cpp" />
+    <ClCompile Include="gameframework\log\LogSystemImGuiView.cpp" />
+    <ClCompile Include="gameframework\InputManager\InputManager.cpp" />
+    <ClCompile Include="gameframework\InputManager\InputManagerAdapter.cpp" />
+    <ClCompile Include="gameframework\InputManager\InputMapper.cpp" />
+    <ClCompile Include="gameframework\manager\AudioManager.cpp" />
+    <ClCompile Include="gameframework\manager\InputSystemManager.cpp" />
+    <ClCompile Include="gameframework\manager\RendererManager.cpp" />
+    <ClCompile Include="gameframework\manager\ResourceManager.cpp" />
+    <ClCompile Include="gameframework\physics\AABB.cpp" />
+    <ClCompile Include="game\component\Camera.cpp" />
+    <ClCompile Include="game\component\CharacterControllerComponent.cpp" />
+    <ClCompile Include="game\component\CollisionComponent.cpp" />
+    <ClCompile Include="game\component\SkyComponent.cpp" />
+    <ClCompile Include="game\component\SpringArmComponent.cpp" />
+    <ClCompile Include="game\component\StaticMeshComponent.cpp" />
+    <ClCompile Include="game\component\Transform.cpp" />
+    <ClCompile Include="game\entity\Actor.cpp" />
+    <ClCompile Include="game\entity\BulletActor.cpp" />
+    <ClCompile Include="game\entity\EnemyTankActor.cpp" />
+    <ClCompile Include="game\entity\GroundActor.cpp" />
+    <ClCompile Include="game\entity\GunBarreActor.cpp" />
+    <ClCompile Include="game\entity\PlayerTankActor.cpp" />
+    <ClCompile Include="game\entity\SkyBoxActor.cpp" />
+    <ClCompile Include="game\entity\TankActor.cpp" />
+    <ClCompile Include="game\entity\TrankTrackL.cpp" />
+    <ClCompile Include="game\entity\TrankTrackR.cpp" />
+    <ClCompile Include="game\entity\WallActor.cpp" />
+    <ClCompile Include="game\PhysicsWorld.cpp" />
+    <ClCompile Include="game\StateNode\EnemyTankStates.cpp" />
+    <ClCompile Include="game\StateNode\PlayerTankStates.cpp" />
+    <ClCompile Include="game\TankGame.cpp" />
+    <ClCompile Include="game\timer\GameTimerManager.cpp" />
+    <ClCompile Include="game\UI\PlayerHUDView.cpp" />
+    <ClCompile Include="game\World.cpp" />
+    <ClCompile Include="src\Mac\main_mac.cpp" />
+    <ClCompile Include="src\PC\main_PC.cpp" />
+    <ClCompile Include="src\PS4\main_ps4.cpp" />
+    <ClCompile Include="src\PS4\memory_PS4.cpp" />
+    <ClCompile Include="render\BMfont.cpp" />
+    <ClCompile Include="render\PC\ImageIO.cpp" />
+    <ClCompile Include="render\PC\RenderPC.cpp" />
+    <ClCompile Include="render\PC\RenderResourcePC.cpp" />
+    <ClCompile Include="render\PC\Utility.cpp" />
+    <ClCompile Include="render\PC\Window.cpp" />
+    <ClCompile Include="render\RenderMeshResource.cpp" />
+    <ClCompile Include="render\RenderTextureResource.cpp" />
+    <ClCompile Include="render\tga.cpp" />
+    <ClCompile Include="render\tiny_obj_loader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\3rdlib\doctest\doctest.h" />
+    <ClInclude Include="..\3rdlib\imgui\imconfig.h" />
+    <ClInclude Include="..\3rdlib\imgui\imgui.h" />
+    <ClInclude Include="..\3rdlib\imgui\imgui_impl_dx12.h" />
+    <ClInclude Include="..\3rdlib\imgui\imgui_impl_metal.h" />
+    <ClInclude Include="..\3rdlib\imgui\imgui_impl_osx.h" />
+    <ClInclude Include="..\3rdlib\imgui\imgui_impl_win32.h" />
+    <ClInclude Include="..\3rdlib\imgui\imgui_internal.h" />
+    <ClInclude Include="..\3rdlib\imgui\imstb_rectpack.h" />
+    <ClInclude Include="..\3rdlib\imgui\imstb_textedit.h" />
+    <ClInclude Include="..\3rdlib\imgui\imstb_truetype.h" />
+    <ClInclude Include="..\3rdlib\json\json.hpp" />
+    <ClInclude Include="assets\pc_shader\Shaders.h" />
+    <ClInclude Include="assets\embedded\RubyTexture.h" />
+    <ClInclude Include="gameframework\assets\AssetCommon.h" />
+    <ClInclude Include="gameframework\editor\FpsCounter.h" />
+    <ClInclude Include="gameframework\GameFramework.h" />
+    <ClInclude Include="gameframework\InputManager\KeyCodes.h" />
+    <ClInclude Include="gameframework\log\ImGuiManager.h" />
+    <ClInclude Include="gameframework\log\LogSystem.h" />
+    <ClInclude Include="gameframework\log\LogSystemImGuiView.h" />
+    <ClInclude Include="gameframework\InputManager\IInputSystem.h" />
+    <ClInclude Include="gameframework\InputManager\InputAction.h" />
+    <ClInclude Include="gameframework\InputManager\InputManager.h" />
+    <ClInclude Include="gameframework\InputManager\InputManagerAdapter.h" />
+    <ClInclude Include="gameframework\InputManager\InputMapper.h" />
+    <ClInclude Include="gameframework\manager\AudioManager.h" />
+    <ClInclude Include="gameframework\manager\InputSystemManager.h" />
+    <ClInclude Include="gameframework\manager\RendererManager.h" />
+    <ClInclude Include="gameframework\manager\ResourceManager.h" />
+    <ClInclude Include="gameframework\physics\AABB.h" />
+    <ClInclude Include="gameframework\physics\Ray.h" />
+    <ClInclude Include="gameframework\timer\timer.h" />
+    <ClInclude Include="gameframework\ui\UiScreen.h" />
+    <ClInclude Include="game\component\Camera.h" />
+    <ClInclude Include="game\component\CharacterControllerComponent.h" />
+    <ClInclude Include="game\component\CollisionComponent.h" />
+    <ClInclude Include="game\component\Component.h" />
+    <ClInclude Include="game\component\SkyComponent.h" />
+    <ClInclude Include="game\component\SpringArmComponent.h" />
+    <ClInclude Include="game\component\StaticMeshComponent.h" />
+    <ClInclude Include="game\component\Transform.h" />
+    <ClInclude Include="game\Constants.h" />
+    <ClInclude Include="game\entity\Actor.h" />
+    <ClInclude Include="game\entity\BulletActor.h" />
+    <ClInclude Include="game\entity\EnemyTankActor.h" />
+    <ClInclude Include="game\entity\GroundActor.h" />
+    <ClInclude Include="game\entity\GunBarreActor.h" />
+    <ClInclude Include="game\entity\PlayerTankActor.h" />
+    <ClInclude Include="game\entity\SkyBoxActor.h" />
+    <ClInclude Include="game\entity\TankActor.h" />
+    <ClInclude Include="game\entity\TankTrackL.h" />
+    <ClInclude Include="game\entity\TrankTrackR.h" />
+    <ClInclude Include="game\entity\WallActor.h" />
+    <ClInclude Include="game\IGame.h" />
+    <ClInclude Include="game\PhysicsWorld.h" />
+    <ClInclude Include="game\StateMachine\IState.h" />
+    <ClInclude Include="game\StateMachine\StateMachine.h" />
+    <ClInclude Include="game\StateNode\EnemyTankStates.h" />
+    <ClInclude Include="game\StateNode\PlayerTankStates.h" />
+    <ClInclude Include="game\TankGame.h" />
+    <ClInclude Include="game\timer\GameTimerManager.h" />
+    <ClInclude Include="game\UI\PlayerHUDView.h" />
+    <ClInclude Include="game\World.h" />
+    <ClInclude Include="include\Common.h" />
+    <ClInclude Include="include\Platform.h" />
+    <ClInclude Include="render\BMfont.h" />
+    <ClInclude Include="audio\AudioInterface.h" />
+    <ClInclude Include="audio\AudioResourceWave.h" />
+    <ClInclude Include="audio\PC\AudioPC.h" />
+    <ClInclude Include="render\Mac\RenderMac.h" />
+    <ClInclude Include="render\Mac\WindowMac.h" />
+    <ClInclude Include="render\PC\d3dx12.h" />
+    <ClInclude Include="render\PC\ImageIO.h" />
+    <ClInclude Include="render\PC\RenderPC.h" />
+    <ClInclude Include="render\PC\RenderPCNative.h" />
+    <ClInclude Include="render\PC\RenderResourcePC.h" />
+    <ClInclude Include="render\PC\Utility.h" />
+    <ClInclude Include="render\PC\Window.h" />
+    <ClInclude Include="render\RenderInterface.h" />
+    <ClInclude Include="render\tga.h" />
+    <ClInclude Include="render\tiny_obj_loader.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\3rdlib\imgui\imgui_impl_metal.mm" />
+    <None Include="..\3rdlib\imgui\imgui_impl_osx.mm" />
+    <None Include="game\data\mapData.json" />
+    <None Include="render\Mac\ImageIOMac.mm" />
+    <None Include="render\Mac\RenderMac.mm" />
+    <None Include="render\Mac\RenderResourceMac.mm" />
+    <None Include="render\Mac\WindowMac.mm" />
+    <None Include="src\Mac\main_tank.mm" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Import Project="$(SolutionDir)\SceGnm.targets" Condition="Exists('$(SolutionDir)\SceGnm.Development.props') AND '$(Configuration)|$(Platform)'=='Debug|ORBIS'" />
+  <Import Project="$(SCE_ORBIS_SDK_DIR)\host_tools\msbuild\SceGnm.targets" Condition="!Exists('$(SolutionDir)\SceGnm.Development.props') AND '$(Configuration)|$(Platform)'=='Debug|ORBIS'" />
+  <Import Project="$(SolutionDir)\SceGnm.targets" Condition="Exists('$(SolutionDir)\SceGnm.Development.props') AND '$(Configuration)|$(Platform)'=='Release|ORBIS'" />
+  <Import Project="$(SCE_ORBIS_SDK_DIR)\host_tools\msbuild\SceGnm.targets" Condition="!Exists('$(SolutionDir)\SceGnm.Development.props') AND '$(Configuration)|$(Platform)'=='Release|ORBIS'" />
+</Project>

@@ -1,0 +1,61 @@
+{
+  "version": "1.0",
+  "description": "坦克游戏输入配置文件",
+  "comment": "此文件定义了游戏动作到按键的映射关系",
+  
+  "actions": {
+    "MoveForward": ["W"],
+    "MoveBackward": ["S"],
+    "TurnLeft": ["A"],
+    "TurnRight": ["D"],
+    "Fire": ["Space", "MouseLeft"],
+    "AimMode": ["MouseRight"],
+    "Reload": ["R"],
+    "CameraZoomIn": ["E"],
+    "CameraZoomOut": ["Q"],
+    "Pause": ["P"],
+    "Menu": ["Escape"],
+    "Quit": ["Escape"],
+    "Interact": ["F"],
+    "ToggleDebugView": ["F3"],
+    "Screenshot": ["F12"]
+  },
+  
+  "axes": {
+    "MoveVertical": {
+      "positiveKey": "W",
+      "negativeKey": "S",
+      "deadzone": 0.15,
+      "sensitivity": 1.0,
+      "smoothing": false
+    },
+    "TurnHorizontal": {
+      "positiveKey": "D",
+      "negativeKey": "A",
+      "deadzone": 0.15,
+      "sensitivity": 1.0,
+      "smoothing": false
+    },
+    "AimHorizontal": {
+      "positiveKey": "Right",
+      "negativeKey": "Left",
+      "deadzone": 0.1,
+      "sensitivity": 1.0,
+      "smoothing": true
+    },
+    "AimVertical": {
+      "positiveKey": "Up",
+      "negativeKey": "Down",
+      "deadzone": 0.1,
+      "sensitivity": 1.0,
+      "smoothing": true
+    },
+    "CameraZoom": {
+      "positiveKey": "E",
+      "negativeKey": "Q",
+      "deadzone": 0.1,
+      "sensitivity": 1.0,
+      "smoothing": false
+    }
+  }
+}
